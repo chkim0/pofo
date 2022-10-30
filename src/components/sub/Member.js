@@ -264,7 +264,7 @@ function Member() {
                 <th colSpan='2'>
                   <input
                     type="reset"
-                    value="CANCLE"
+                    value="CANCEL"
                     onClick={handleReset}
                   />
                   <input

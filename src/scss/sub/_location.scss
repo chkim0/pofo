@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Orbitron:wght@900&display=swap');
+
 .Location {
-	background: #222;
+	background: linear-gradient(45deg, #222, #000);
 	figure {
 		background: lightblue;
 	}
@@ -21,11 +23,13 @@
 			height: 30px;
 			border: 1px solid #888;
 			padding: 5px 20px;
+			font: 12px/1 "Orbitron";
 		}
 
 		ul {
 			display: flex;
 			li {
+				font: 12px/1 "Orbitron";
 				border: 1px solid #888;
 				height: 30px;
 				padding: 0px 20px;
@@ -35,9 +39,9 @@
 				margin-left: 10px;
 				transition: 0.5s;
 				&.on {
-					background: #333;
+					background: #ddd;
 					border: 1px solid #333;
-					color: #fff;
+					color: #000;
 				}
 			}
 		}

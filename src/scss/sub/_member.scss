@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Orbitron:wght@900&display=swap');
 .Member {
-	background: #222;
+	background: linear-gradient(45deg, #222, #000);
 	figure {
 		background: lightgreen;
 	}
@@ -9,9 +10,12 @@
 			border: none;
 			border-top: 2px solid #333;
 			border-bottom: 1px solid #333;
+			font: bold 15px/1 "Orbitron";
+			color:#fff;
 
 			th {
 				width: 20%;
+
 				border: none;
 				border-bottom: 1px solid #bbb;
 				padding: 15px 30px;
@@ -22,7 +26,7 @@
 
 				input[type="reset"],
 				input[type="submit"] {
-					border: 1px solid #aaa;
+					border: 3px ridge #333;
 					width: 150px;
 					height: 30px;
 					display: inline-flex;
@@ -30,6 +34,8 @@
 					align-items: center;
 					margin: 0px 10px;
 					cursor: pointer;
+					font: bold 20px/1 "Orbitron";
+
 				}
 			}
 			td {
@@ -43,16 +49,21 @@
 					width: 40%;
 					border: 1px solid #aaa;
 					padding: 6px 10px;
+					border: 3px ridge #333;
 				}
 				textarea {
 					width: 40%;
 					border: 1px solid #aaa;
 					padding: 6px 10px;
 					resize: none;
+					border: 3px ridge #333;
 				}
 				label {
-					margin-right: 6px;
-					font: bold 15px/1; color: #fff;
+					margin-right: 8px;
+					margin-left: 5px;
+					font: bold 15px/1 "Orbitron";color: #fff;
+
+					
 				}
 				input[type="radio"] {
 					margin-right: 20px;

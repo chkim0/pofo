@@ -1,5 +1,7 @@
-.Gallery {
-	background: #222;
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Orbitron:wght@900&display=swap');
+
+.Gallery {background: linear-gradient(45deg, #222, #000);
+	
 	.loading {
 		position: absolute;
 		top: 0;
@@ -20,7 +22,7 @@
 				width: 130px;
 				height: 30px;
 				background: #555;
-				font: 12px/30px "arial";
+				font: 12px/30px "Orbitron";
 				color: #ddd;
 				text-align: center;
 				cursor: pointer;
@@ -42,7 +44,7 @@
 				height: 26px;
 				border: none;
 				background: #555;
-				font: 12px/26px "arial";
+				font: 12px/26px "Orbitron";
 				color: #fff;
 				cursor: pointer;
 				margin-left: 5px;
@@ -81,7 +83,8 @@
 					}
 				}
 				h2 {
-					font: normal 14px/1.2 "arial";
+					margin-top: 10px;
+					font: normal 15px/1.2 "Caveat";
 					color: #777;
 					margin-bottom: 30px;
 				}

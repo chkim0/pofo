@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Orbitron:wght@900&display=swap');
+
 .Youtube {
-	background: #222;
+	background: linear-gradient(45deg, #222, #000);
 	article {
 		border-top: 1px solid #aaa;
 		padding: 20px 0px;
@@ -9,9 +11,9 @@
 		h3 {
 			width: 44%;
 			font-weight: bold;
-			font-size: 22px;
-			font-family: 'work sans';
-			color: #777;
+			font-size: 40px;
+			font-family: 'Caveat';
+			color: #fff;
 		}
 		.txt {
 			width: 38%;

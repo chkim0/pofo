@@ -4,6 +4,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat&family=Orbitron:wght@900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat&family=Orbitron:wght@900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat&family=Orbitron:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Orbitron:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Orbitron:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Orbitron:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Orbitron:wght@900&display=swap");
 * {
   margin: 0px;
   padding: 0px;
@@ -381,12 +385,12 @@ header.main .inner .fa-bars {
 #visual .inner a {
   display: block;
   text-align: center;
-  height: 40px;
-  width: 250px;
+  height: 25px;
+  width: 200px;
   top: 385px;
   left: 245px;
-  padding-top: 8px;
-  font: bold 20px/1 "arial";
+  padding-top: 5px;
+  font: bold 15px/1 "Caveat";
   color: #fff;
   transform: skewX(315deg);
   position: absolute;
@@ -579,7 +583,7 @@ header.main .inner .fa-bars {
 }
 
 .Community {
-  background: #333;
+  background: linear-gradient(45deg, #222, #000);
 }
 .Community > .inner {
   width: 1180px;
@@ -594,6 +598,13 @@ header.main .inner .fa-bars {
   margin-bottom: 20px;
   resize: none;
 }
+.Community > .inner .txt h2 {
+  font: bold 30px/1 "Caveat";
+  margin-bottom: 8px;
+}
+.Community > .inner .txt p {
+  font: normal 15px/1 "Caveat";
+}
 .Community > .inner .btnSet button {
   width: 150px;
   height: 30px;
@@ -601,6 +612,7 @@ header.main .inner .fa-bars {
   border: none;
   background: #555;
   color: #fff;
+  font: normal 15px/1 "Orbitron";
   cursor: pointer;
   margin-right: 20px;
   margin-bottom: 20px;
@@ -637,6 +649,7 @@ header.main .inner .fa-bars {
 .Community .showBox article .btnSet button {
   background: transparent;
   margin: 10px;
+  font: normal 15px/1 "Orbitron";
   cursor: pointer;
   border: none;
 }
@@ -672,7 +685,7 @@ header.main .inner .fa-bars {
   }
 }
 .Department {
-  background: #222;
+  background: linear-gradient(45deg, #222, #000);
   margin-bottom: 20px;
 }
 .Department > .inner {
@@ -751,7 +764,7 @@ header.main .inner .fa-bars {
   }
 }
 .Gallery {
-  background: #222;
+  background: linear-gradient(45deg, #222, #000);
 }
 .Gallery .loading {
   position: absolute;
@@ -775,7 +788,7 @@ header.main .inner .fa-bars {
   width: 130px;
   height: 30px;
   background: #555;
-  font: 12px/30px "arial";
+  font: 12px/30px "Orbitron";
   color: #ddd;
   text-align: center;
   cursor: pointer;
@@ -796,7 +809,7 @@ header.main .inner .fa-bars {
   height: 26px;
   border: none;
   background: #555;
-  font: 12px/26px "arial";
+  font: 12px/26px "Orbitron";
   color: #fff;
   cursor: pointer;
   margin-left: 5px;
@@ -834,7 +847,8 @@ header.main .inner .fa-bars {
   width: 100%;
 }
 .Gallery .frame article .inner h2 {
-  font: normal 14px/1.2 "arial";
+  margin-top: 10px;
+  font: normal 15px/1.2 "Caveat";
   color: #777;
   margin-bottom: 30px;
 }
@@ -869,7 +883,7 @@ header.main .inner .fa-bars {
   }
 }
 .Location {
-  background: #222;
+  background: linear-gradient(45deg, #222, #000);
 }
 .Location figure {
   background: lightblue;
@@ -891,11 +905,13 @@ header.main .inner .fa-bars {
   height: 30px;
   border: 1px solid #888;
   padding: 5px 20px;
+  font: 12px/1 "Orbitron";
 }
 .Location .btnSet ul {
   display: flex;
 }
 .Location .btnSet ul li {
+  font: 12px/1 "Orbitron";
   border: 1px solid #888;
   height: 30px;
   padding: 0px 20px;
@@ -906,13 +922,13 @@ header.main .inner .fa-bars {
   transition: 0.5s;
 }
 .Location .btnSet ul li.on {
-  background: #333;
+  background: #ddd;
   border: 1px solid #333;
-  color: #fff;
+  color: #000;
 }
 
 .Member {
-  background: #222;
+  background: linear-gradient(45deg, #222, #000);
 }
 .Member figure {
   background: lightgreen;
@@ -922,6 +938,8 @@ header.main .inner .fa-bars {
   border: none;
   border-top: 2px solid #333;
   border-bottom: 1px solid #333;
+  font: bold 15px/1 "Orbitron";
+  color: #fff;
 }
 .Member > .inner table th {
   width: 20%;
@@ -935,7 +953,7 @@ header.main .inner .fa-bars {
 }
 .Member > .inner table th input[type=reset],
 .Member > .inner table th input[type=submit] {
-  border: 1px solid #aaa;
+  border: 3px ridge #333;
   width: 150px;
   height: 30px;
   display: inline-flex;
@@ -943,6 +961,7 @@ header.main .inner .fa-bars {
   align-items: center;
   margin: 0px 10px;
   cursor: pointer;
+  font: bold 20px/1 "Orbitron";
 }
 .Member > .inner table td {
   border: none;
@@ -955,16 +974,19 @@ header.main .inner .fa-bars {
   width: 40%;
   border: 1px solid #aaa;
   padding: 6px 10px;
+  border: 3px ridge #333;
 }
 .Member > .inner table td textarea {
   width: 40%;
   border: 1px solid #aaa;
   padding: 6px 10px;
   resize: none;
+  border: 3px ridge #333;
 }
 .Member > .inner table td label {
-  margin-right: 6px;
-  font: bold 15px/1;
+  margin-right: 8px;
+  margin-left: 5px;
+  font: bold 15px/1 "Orbitron";
   color: #fff;
 }
 .Member > .inner table td input[type=radio] {
@@ -977,7 +999,7 @@ header.main .inner .fa-bars {
 }
 
 .Youtube {
-  background: #222;
+  background: linear-gradient(45deg, #222, #000);
 }
 .Youtube article {
   border-top: 1px solid #aaa;
@@ -989,9 +1011,9 @@ header.main .inner .fa-bars {
 .Youtube article h3 {
   width: 44%;
   font-weight: bold;
-  font-size: 22px;
-  font-family: "work sans";
-  color: #777;
+  font-size: 40px;
+  font-family: "Caveat";
+  color: #fff;
 }
 .Youtube article .txt {
   width: 38%;

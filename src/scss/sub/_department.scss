@@ -1,5 +1,5 @@
 .Department {
-	background: #222;
+	background: linear-gradient(45deg, #222, #000);
 	margin-bottom: 20px;
 	> .inner {    padding: 85px;
 		&::after {
