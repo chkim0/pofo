@@ -4,6 +4,7 @@ header {
 	width: 100%;
 	background: #000;
 	margin-top: 10px;
+	
 	.inner {
 		width: 1180px;
 		height: 80px;
@@ -13,11 +14,11 @@ header {
 		h1 {
 			position: absolute;
 			bottom: 23px;
-			left: 70px;
+			left: 165px;
 			display: inline-block;
 
 			a {
-				font: normal 25px/1 "Orbitron";
+				font: normal 30px/1 "Orbitron";
 				color: #fff;
 				text-align: center;
 			}

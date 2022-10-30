@@ -27,7 +27,7 @@ function Pics({Scrolled, start}){
         }}>Wtat we can do for you?</h3>
         <ul>
         {Pics.map((pic, idx)=>{
-            if(idx >=4) return;
+            if(idx >=5) return;
             return(
                 
                 <li key={pic.id}>

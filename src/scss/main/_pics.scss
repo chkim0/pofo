@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Orbitron:wght@900&display=swap');
 #pics{
     width: 100%;
     height: 100vh;
-    background: #222;
+    background: linear-gradient(45deg, #222, #000);
     position: relative;
     padding: 10vw;
     overflow: hidden;
@@ -10,15 +11,15 @@
     flex-wrap: wrap;
 
     p{
-        font: bold 100px/1 'arial';
-        color: rgba(0,0,0,0.3);
+        font: bold 100px/1 'Orbitron';
+        color: rgb(146, 146, 146);
         position: absolute;
         top: 100px;
         left: 100px;
        
     }
     h3{
-        font: bold 60px/1 'arial';
+        font: bold 60px/1 'Orbitron';
         color: #fff;
         position: absolute;
         top: 160px;
@@ -31,6 +32,7 @@
         flex-wrap: wrap;
         gap: 50px;
         justify-content: center;
+       
     }
    
 }

@@ -1,4 +1,5 @@
 .Member {
+	background: #222;
 	figure {
 		background: lightgreen;
 	}
@@ -51,6 +52,7 @@
 				}
 				label {
 					margin-right: 6px;
+					font: bold 15px/1; color: #fff;
 				}
 				input[type="radio"] {
 					margin-right: 20px;

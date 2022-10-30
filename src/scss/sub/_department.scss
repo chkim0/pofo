@@ -1,7 +1,7 @@
 .Department {
 	background: #222;
 	margin-bottom: 20px;
-	> .inner {
+	> .inner {    padding: 85px;
 		&::after {
 			content: "";
 			display: block;

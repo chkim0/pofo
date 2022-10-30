@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Bangers&family=Bowlby+One+SC&family=Grape+Nuts&family=Herr+Von+Muellerhoff&family=Notable&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Orbitron:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Orbitron:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Orbitron:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Orbitron:wght@900&display=swap");
 * {
   margin: 0px;
   padding: 0px;
@@ -37,6 +41,7 @@ fieldset {
 }
 
 footer {
+  background: #000;
   width: 100%;
   border-top: 1px solid #bbb;
   padding: 100px 0px;
@@ -49,7 +54,7 @@ footer .inner {
 footer .inner p {
   text-align: center;
   font: 12px/1 "arial";
-  color: #999;
+  color: #eee;
   letter-spacing: 2px;
 }
 
@@ -126,11 +131,11 @@ header .inner {
 header .inner h1 {
   position: absolute;
   bottom: 23px;
-  left: 70px;
+  left: 165px;
   display: inline-block;
 }
 header .inner h1 a {
-  font: normal 25px/1 "Orbitron";
+  font: normal 30px/1 "Orbitron";
   color: #fff;
   text-align: center;
 }
@@ -241,7 +246,7 @@ header.main .inner .fa-bars {
 #news {
   width: 100%;
   height: 100vh;
-  background: #222;
+  background: linear-gradient(45deg, #000, #222);
   padding: 10vh;
   display: flex;
   flex-wrap: wrap;
@@ -262,7 +267,7 @@ header.main .inner .fa-bars {
   display: block;
   margin: 0 auto;
   position: absolute;
-  top: -45px;
+  top: -35px;
   left: 255px;
 }
 #news .inner .newsheader > span {
@@ -273,6 +278,7 @@ header.main .inner .fa-bars {
 #news .inner .newsheader h1 {
   display: block;
   width: 100%;
+  font: normal 30px/1 "Orbitron";
   text-align: center;
   margin-bottom: 20px;
   z-index: 3;
@@ -290,12 +296,12 @@ header.main .inner .fa-bars {
   transition-duration: 0.5s;
 }
 #news .inner article h3 {
-  font: bold 18px/1 "arial";
+  font: bold 18px/1 "Caveat";
   color: #fff;
   margin-bottom: 15px;
 }
 #news .inner article p {
-  font: 10px/1.2 "arial";
+  font: 10px/1.2 "Caveat";
   color: #fff;
 }
 #news.on article {
@@ -324,7 +330,7 @@ header.main .inner .fa-bars {
 #visual {
   width: 100%;
   height: 90vh;
-  background: #333;
+  background: linear-gradient(45deg, #222, #000);
 }
 #visual .inner {
   width: 1180px;
@@ -356,7 +362,7 @@ header.main .inner .fa-bars {
   position: absolute;
   top: 190px;
   left: 235px;
-  font: bold 70px/1 "Grape Nuts", cursive;
+  font: bold 70px/1 "Orbitron";
   color: #fff;
   z-index: 7;
 }
@@ -366,11 +372,11 @@ header.main .inner .fa-bars {
   display: block;
   width: 450px;
   height: 2px;
-  background: burlywood;
+  background: #fff;
   margin-top: 10px;
   z-index: 15;
   top: 98px;
-  left: 238px;
+  left: 380px;
 }
 #visual .inner a {
   display: block;
@@ -382,13 +388,10 @@ header.main .inner .fa-bars {
   padding-top: 8px;
   font: bold 20px/1 "arial";
   color: #fff;
-  transform: skewX(0deg);
+  transform: skewX(315deg);
   position: absolute;
   background-color: burlywood;
   z-index: 7;
-}
-#visual .inner a::after {
-  transform: skewX(315deg);
 }
 #visual .inner .scrd {
   font: bold 12px/1 "arial";
@@ -436,14 +439,14 @@ header.main .inner .fa-bars {
   margin: 10px 20px;
 }
 #visual .inner .lorem > p {
-  font: 15px/1.3 "arial";
+  font: 18px/1.2 "Caveat";
   color: #fff;
   margin: 10px 27px;
 }
 #visual .inner .lorem span {
-  font: 10px/1.2 "arial";
+  font: 10px/1.2 "Caveat";
   color: #999;
-  margin: 3px 15px;
+  margin: 10px 15px;
   display: block;
   padding: 5px;
 }
@@ -483,7 +486,8 @@ header.main .inner .fa-bars {
   object-fit: cover;
 }
 #vids .swiper .swiper-slide .inner h2 {
-  font: normal 40px/1 "work sans";
+  margin-top: 65px;
+  font: normal 40px/1 "Caveat";
   color: #333;
 }
 #vids .swiper .swiper-slide.swiper-slide-active .inner {
@@ -519,7 +523,7 @@ header.main .inner .fa-bars {
 #pics {
   width: 100%;
   height: 100vh;
-  background: #222;
+  background: linear-gradient(45deg, #222, #000);
   position: relative;
   padding: 10vw;
   overflow: hidden;
@@ -528,14 +532,14 @@ header.main .inner .fa-bars {
   flex-wrap: wrap;
 }
 #pics p {
-  font: bold 100px/1 "arial";
-  color: rgba(0, 0, 0, 0.3);
+  font: bold 100px/1 "Orbitron";
+  color: rgb(146, 146, 146);
   position: absolute;
   top: 100px;
   left: 100px;
 }
 #pics h3 {
-  font: bold 60px/1 "arial";
+  font: bold 60px/1 "Orbitron";
   color: #fff;
   position: absolute;
   top: 160px;
@@ -574,12 +578,14 @@ header.main .inner .fa-bars {
   border: #fff;
 }
 
+.Community {
+  background: #333;
+}
 .Community > .inner {
-  width: 100%;
+  width: 1180px;
   border: 1px solid #bbb;
   padding: 50px;
   margin-bottom: 50px;
-  background: #333;
 }
 .Community > .inner input[type=text], .Community > .inner textarea {
   width: 50%;
@@ -669,6 +675,9 @@ header.main .inner .fa-bars {
   background: #222;
   margin-bottom: 20px;
 }
+.Department > .inner {
+  padding: 85px;
+}
 .Department > .inner::after {
   content: "";
   display: block;
@@ -740,6 +749,9 @@ header.main .inner .fa-bars {
   .Department > .inner article .info .pic {
     height: 200px;
   }
+}
+.Gallery {
+  background: #222;
 }
 .Gallery .loading {
   position: absolute;
@@ -856,6 +868,9 @@ header.main .inner .fa-bars {
     width: 100%;
   }
 }
+.Location {
+  background: #222;
+}
 .Location figure {
   background: lightblue;
 }
@@ -896,6 +911,9 @@ header.main .inner .fa-bars {
   color: #fff;
 }
 
+.Member {
+  background: #222;
+}
 .Member figure {
   background: lightgreen;
 }
@@ -946,6 +964,8 @@ header.main .inner .fa-bars {
 }
 .Member > .inner table td label {
   margin-right: 6px;
+  font: bold 15px/1;
+  color: #fff;
 }
 .Member > .inner table td input[type=radio] {
   margin-right: 20px;
@@ -956,6 +976,9 @@ header.main .inner .fa-bars {
   margin-left: 10px;
 }
 
+.Youtube {
+  background: #222;
+}
 .Youtube article {
   border-top: 1px solid #aaa;
   padding: 20px 0px;

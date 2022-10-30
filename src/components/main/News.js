@@ -43,7 +43,7 @@ function News() {
             <h1>What's New?</h1>
             </div>
             {Posts.map((post, idx) => {
-                if (idx >= 3) return; //5개의 인덱스만 가져다 달라는 의미
+                if (idx >= 5) return; //5개의 인덱스만 가져다 달라는 의미
                  /*날짜넣기*/   
                 return (
                     <article key={idx}>

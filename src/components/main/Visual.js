@@ -34,7 +34,7 @@ export default function Visual() {
         <div className='lorem'>
           <h1>L A S T V I D E O</h1>
           <p>Wild Iceland in the winter in 10 days</p>
-          <span>Duis tincidunt vestibulum urna, in tempor nibh fermentum sed duis tincidurn massa at facibus.</span>
+          <span>Duis tincidunt vestibulum urna, in tempor more about usnibh fermentum sed duis tincidurn massa at facibus Whereas more about us recognition of the inherent dignity.</span>
          </div>
         </div >
     </figure>
