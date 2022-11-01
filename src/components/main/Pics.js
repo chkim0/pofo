@@ -32,6 +32,7 @@ function Pics({Scrolled, start}){
                 
                 <li key={pic.id}>
                     <img src={`https://live.staticflickr.com/${pic.server}/${pic.id}_${pic.secret}_m.jpg`} />
+                    
                 </li>
             )
         })}

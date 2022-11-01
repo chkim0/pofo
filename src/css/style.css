@@ -527,7 +527,7 @@ header.main .inner .fa-bars {
 #pics {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(45deg, #222, #000);
+  background: linear-gradient(180deg, #111, #444);
   position: relative;
   padding: 10vw;
   overflow: hidden;
@@ -556,6 +556,10 @@ header.main .inner .fa-bars {
   flex-wrap: wrap;
   gap: 50px;
   justify-content: center;
+}
+#pics ul li img {
+  border: 5px solid #fff;
+  border-bottom: 30px solid #fff;
 }
 
 .scroll_navi {
@@ -690,6 +694,10 @@ header.main .inner .fa-bars {
 }
 .Department > .inner {
   padding: 85px;
+  width: 100%;
+  opacity: 1;
+  padding: 10px;
+  margin-right: 10px;
 }
 .Department > .inner::after {
   content: "";
@@ -697,10 +705,11 @@ header.main .inner .fa-bars {
   clear: both;
 }
 .Department > .inner article {
-  width: 33.333%;
+  width: 30%;
   float: left;
-  padding: 10px;
-  margin-bottom: 20px;
+  padding: 40px;
+  margin: 20px auto;
+  position: relative;
 }
 .Department > .inner article .pic {
   width: 100%;
@@ -711,6 +720,13 @@ header.main .inner .fa-bars {
   filter: saturate(0.3);
   transition: 0.5s;
   transform: translateY(100px);
+  z-index: 3;
+  position: relative;
+}
+.Department > .inner article .pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .Department > .inner article .pic:hover .pic {
   opacity: 1;
@@ -721,28 +737,23 @@ header.main .inner .fa-bars {
   transform: translateY(0);
   opacity: 1;
 }
-.Department > .inner article .pic img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.Department > .inner article .inner {
-  width: 373px;
-  height: 130px;
-  background-color: #ddd;
-  opacity: 1;
-  padding: 10px;
-  margin-right: 10px;
-}
-.Department > .inner article .inner h3 {
+.Department > .inner article h3 {
   font: bold 25px/1 "arial";
   color: #fff;
   text-align: center;
 }
-.Department > .inner article .inner p {
-  font: bold 15px/1 "arial";
+.Department > .inner article a {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 49vh;
+  right: 7vw;
+  display: flex;
+  gap: 10px;
+  font-size: 20px;
   color: #fff;
-  text-align: center;
+  cursor: pointer;
+  z-index: 1;
 }
 
 @media screen and (max-width: 1179px) {
