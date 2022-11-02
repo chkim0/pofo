@@ -289,10 +289,9 @@ header.main .inner .fa-bars {
   color: #fff;
 }
 #news .inner article {
-  width: 25%;
-  min-height: 180px;
-  border: 1px solid #fff;
-  background: #000;
+  width: 26%;
+  height: 250px;
+  background: #F4FA58;
   padding: 20px;
   margin: 10px;
   transform: translateY(100px) rotateY(180deg);
@@ -300,13 +299,76 @@ header.main .inner .fa-bars {
   transition-duration: 0.5s;
 }
 #news .inner article h3 {
-  font: bold 18px/1 "Caveat";
-  color: #fff;
-  margin-bottom: 15px;
+  font: bold 22px/1 "Caveat";
+  color: #000;
+  margin: 10px auto 15px;
+  text-align: center;
 }
 #news .inner article p {
-  font: 10px/1.2 "Caveat";
-  color: #fff;
+  margin-top: 30px;
+  font: 15px/1 "Caveat";
+  color: #000;
+  text-align: center;
+}
+#news .inner .newssec {
+  width: 1000px;
+  height: 380px;
+  border-top: 1px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 50px;
+}
+#news .inner .newssec .pic {
+  flex: 1;
+  height: 325px;
+  background: #000;
+  overflow: hidden;
+  position: relative;
+  z-index: 10;
+}
+#news .inner .newssec .pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#news .inner .newssec .inputBox {
+  flex: 0 0 285px;
+  display: block;
+  text-align: center;
+  margin-left: 30px;
+}
+#news .inner .newssec .inputBox input[type=text] {
+  width: 100%;
+  height: 85px;
+  padding: 8px 10px;
+  border: 1px solid #aaa;
+  resize: none;
+  background-color: #F4FA58;
+  text-align: center;
+}
+#news .inner .newssec .inputBox textarea {
+  width: 100%;
+  height: 185px;
+  padding: 8px 10px;
+  border: 1px solid #aaa;
+  resize: none;
+  background-color: #F4FA58;
+  text-align: center;
+}
+#news .inner .newssec .inputBox .txt h2 {
+  font: bold 30px/1 "Caveat";
+  margin-bottom: 8px;
+}
+#news .inner .newssec .inputBox .txt p {
+  font: normal 15px/1 "Caveat";
+}
+#news .inner .newssec .inputBox .btsSet button {
+  border: 3px ridge #333;
+  width: 20px;
+  height: 15px;
+  background-color: #F4FA58;
+  font: bold 20px/1 "Orbitron";
 }
 #news.on article {
   transform: translateY(0) rotateY(0deg);
@@ -382,23 +444,26 @@ header.main .inner .fa-bars {
   top: 98px;
   left: 380px;
 }
-#visual .inner a {
+#visual .inner .visbtn {
   display: block;
   text-align: center;
   height: 25px;
-  width: 200px;
+  width: 180px;
   top: 385px;
   left: 245px;
   padding-top: 5px;
-  font: bold 15px/1 "Caveat";
-  color: #fff;
   transform: skewX(315deg);
   position: absolute;
   background-color: burlywood;
   z-index: 7;
 }
+#visual .inner .visbtn p {
+  font: bold 12px/1 "Poiret One";
+  color: #fff;
+  transform: skewX(-315deg);
+}
 #visual .inner .scrd {
-  font: bold 12px/1 "arial";
+  font: bold 12px/1 "Poiret One";
   color: orange;
   position: absolute;
   top: 600px;
@@ -551,15 +616,26 @@ header.main .inner .fa-bars {
   text-shadow: 20px 20px 50px rgba(0, 0, 0, 0.4);
 }
 #pics ul {
-  width: 100%;
+  width: 1180px;
   display: flex;
   flex-wrap: wrap;
-  gap: 50px;
+  gap: 30px;
   justify-content: center;
 }
+#pics ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#pics ul li {
+  width: 30%;
+  height: 30vh;
+  overflow: hidden;
+  object-fit: cover;
+  float: left;
+}
 #pics ul li img {
-  border: 5px solid #fff;
-  border-bottom: 30px solid #fff;
+  width: 100%;
 }
 
 .scroll_navi {
@@ -694,86 +770,33 @@ header.main .inner .fa-bars {
 }
 .Department > .inner {
   padding: 85px;
-  width: 100%;
+  width: 1180px;
   opacity: 1;
-  padding: 10px;
-  margin-right: 10px;
 }
 .Department > .inner::after {
   content: "";
   display: block;
   clear: both;
 }
-.Department > .inner article {
-  width: 30%;
-  float: left;
-  padding: 40px;
-  margin: 20px auto;
-  position: relative;
-}
-.Department > .inner article .pic {
-  width: 100%;
-  height: 400px;
-  background: #111;
-  margin-bottom: 20px;
-  border: 7px solid #fff;
-  filter: saturate(0.3);
-  transition: 0.5s;
-  transform: translateY(100px);
-  z-index: 3;
-  position: relative;
-}
-.Department > .inner article .pic img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.Department > .inner article .pic:hover .pic {
-  opacity: 1;
-  transition: 0.5s;
-}
-.Department > .inner article .pic:hover {
-  filter: saturate(1.1);
-  transform: translateY(0);
-  opacity: 1;
-}
-.Department > .inner article h3 {
-  font: bold 25px/1 "arial";
-  color: #fff;
-  text-align: center;
-}
-.Department > .inner article a {
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  top: 49vh;
-  right: 7vw;
-  display: flex;
-  gap: 10px;
-  font-size: 20px;
-  color: #fff;
-  cursor: pointer;
-  z-index: 1;
-}
-
 @media screen and (max-width: 1179px) {
-  .Department > .inner article {
+  .Department .Department > .inner article {
     width: 50%;
     margin-bottom: 40px;
   }
-  .Department > .inner article .info .pic {
+  .Department .Department > .inner article .info .pic {
     height: 260px;
   }
 }
 @media screen and (max-width: 539px) {
-  .Department > .inner article {
+  .Department .Department > .inner article {
     width: 100%;
     margin-bottom: 30px;
   }
-  .Department > .inner article .info .pic {
+  .Department .Department > .inner article .info .pic {
     height: 200px;
   }
 }
+
 .Gallery {
   background: linear-gradient(45deg, #222, #000);
 }

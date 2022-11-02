@@ -50,27 +50,27 @@
 			}
 		}
 
-		a {
+		.visbtn{
 			display: block;
 			text-align: center;
 			height: 25px;
-			width: 200px;
+			width: 180px;
 			top: 385px;
 			left: 245px;
 			padding-top: 5px;
-			font: bold 15px/1 "Caveat";
-			color: #fff;
 			transform: skewX(315deg);
 			position: absolute;
 			background-color: burlywood;
 			z-index: 7;
-			&::after {
-				
+			 p{		
+				font: bold 12px/1 "Poiret One";
+			color: #fff;
+			transform: skewX(-315deg);
 			}
 		}
 
 		.scrd {
-			font: bold 12px/1 "arial";
+			font: bold 12px/1 "Poiret One";
 			color: orange;
 			position: absolute;
 			top: 600px;

@@ -26,7 +26,9 @@ export default function Visual() {
         <h1>We are making <br />
           real life.
         </h1>
-        <a href="#">read more about us</a>
+        <div className='visbtn'>
+          <p>read more about us</p>
+          </div>
         <span className='scrd'>S C R O L L   D O W N </span>
         <div className="bbox"></div>
         <div className='box' ref={box}></div>

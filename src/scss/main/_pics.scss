@@ -28,21 +28,30 @@
         text-shadow: 20px 20px 50px rgba(0,0,0,0.4);
     }
     ul{
-        width:100%;
+        width: 1180px;
         display: flex;
         flex-wrap: wrap;
-        gap: 50px;
+        gap: 30px;
         justify-content: center;
-        li{
-        
-           img{
-            border:5px solid #fff;
-            border-bottom: 30px solid #fff;
-           }
-         
-           
+        &::after{
+            content: '';
+            display: block;
+            clear: both;
         }
+          li{
+            width: 30%;
+            height: 30vh;
+            overflow: hidden;
+            object-fit: cover;
+            float: left;
+            img{
+                width: 100%;
+             
+            }
+          }
+             
+        }
+        
        
     }
    
-}
