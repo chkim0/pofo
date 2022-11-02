@@ -14,12 +14,12 @@ function Pics({Scrolled, start}){
         <main id="pics" className="myScroll">
        <p 
        style = {{
-        left : 100 + position, 
+        left : 900 + position, 
        }}
         >Wtat we can do for you?</p>
         <h3
         style={{
-            left : 100 + position / 2,
+            left : 700 + position / 2,
         }}>Wtat we can do for you?</h3>
        
        
