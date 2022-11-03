@@ -147,7 +147,8 @@ function News() {
                             <p>{post.content}</p>
                         </article>
                     );
-                })};
+                })}
+
                 <a className="newsbtn"> all news</a>
                 <div className="newssec">
                     <figure className="pic">
@@ -155,10 +156,10 @@ function News() {
                     </figure>
                     <div className="inputBox">
 
-                    <input type="text" placeholder="제목을 입력하세요" ref={input} />
-                    <br />
-                    <textarea cols="30" rows="5" placeholder="본문을 입력하세요" ref={textarea}></textarea>
-                    <br />
+                        <input type="text" placeholder="제목을 입력하세요" ref={input} />
+                        <br />
+                        <textarea cols="30" rows="5" placeholder="본문을 입력하세요" ref={textarea}></textarea>
+                        <br />
                         <div className="btnSet">
                             <button onClick={resetForm}>CANCEL</button>
                             <button onClick={createPost}>WRITE</button>

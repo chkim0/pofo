@@ -1,16 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Orbitron:wght@900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Orbitron:wght@900&display=swap");
 #visual {
 	width: 100%;
 	height: 90vh;
 	background: linear-gradient(45deg, #222, #000);
-	
+
 	.inner {
 		width: 1180px;
 		height: 100%;
 		position: relative;
 		padding: 10px auto;
 		margin: 0 auto;
-		right:0;
+		right: 0;
 		video {
 			position: absolute;
 			top: 91px;
@@ -29,7 +29,7 @@
 			top: 160px;
 			left: 250px;
 		}
-		>h1 {
+		> h1 {
 			position: absolute;
 			top: 190px;
 			left: 235px;
@@ -50,7 +50,7 @@
 			}
 		}
 
-		.visbtn{
+		.visbtn {
 			display: block;
 			text-align: center;
 			height: 25px;
@@ -62,10 +62,10 @@
 			position: absolute;
 			background-color: burlywood;
 			z-index: 7;
-			 p{		
+			p {
 				font: bold 12px/1 "Poiret One";
-			color: #fff;
-			transform: skewX(-315deg);
+				color: #fff;
+				transform: skewX(-315deg);
 			}
 		}
 
@@ -87,49 +87,45 @@
 			top: 626px;
 			left: 0px;
 		}
-		
-		.pic{
+
+		.pic {
 			width: 250px;
 			position: absolute;
 			height: 350px;
 			top: 477px;
 			left: 780px;
 			z-index: 6;
-			img{
+			img {
 				width: 100%;
 				height: 100%;
-				
+			}
 		}
-		}
-		.lorem{
+		.lorem {
 			width: 200px;
 			height: 200px;
 			background: #000;
 			position: absolute;
-			top:627px;
+			top: 627px;
 			right: -1px;
 			z-index: 8;
-			
+
 			padding: 10px;
-			h1{
-				font: 10px/1 'arial';
+			h1 {
+				font: 10px/1 "arial";
 				color: orange;
-				margin: 10px 20px;
-
+				margin: 20px 20px 20px;
 			}
-			>p{
-				font: 18px/1.2 'Caveat';
+			> p {
+				font: 18px/1.2 "Caveat";
 				color: #fff;
-				margin: 10px 27px;
-
+				margin: 20px 10px 20px;
 			}
-			span{
-				font: 10px/1.2 'Caveat';
+			span {
+				font: 10px/1.2 "Caveat";
 				color: #999;
 				margin: 10px 15px;
 				display: block;
-				padding:5px;
-
+				padding: 5px;
 			}
 		}
 	}

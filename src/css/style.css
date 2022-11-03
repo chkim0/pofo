@@ -291,7 +291,7 @@ header.main .inner .fa-bars {
 #news .inner article {
   width: 26%;
   height: 250px;
-  background: #F4FA58;
+  background: #f4fa58;
   padding: 20px;
   margin: 10px;
   transform: translateY(100px) rotateY(180deg);
@@ -309,6 +309,9 @@ header.main .inner .fa-bars {
   font: 15px/1 "Caveat";
   color: #000;
   text-align: center;
+}
+#news .inner article:hover {
+  transform: rotate(5deg);
 }
 #news .inner .newssec {
   width: 1000px;
@@ -344,7 +347,7 @@ header.main .inner .fa-bars {
   padding: 8px 10px;
   border: 1px solid #aaa;
   resize: none;
-  background-color: #F4FA58;
+  background-color: #f4fa58;
   text-align: center;
 }
 #news .inner .newssec .inputBox textarea {
@@ -353,7 +356,7 @@ header.main .inner .fa-bars {
   padding: 8px 10px;
   border: 1px solid #aaa;
   resize: none;
-  background-color: #F4FA58;
+  background-color: #f4fa58;
   text-align: center;
 }
 #news .inner .newssec .inputBox .txt h2 {
@@ -367,7 +370,7 @@ header.main .inner .fa-bars {
   border: 3px ridge #333;
   width: 20px;
   height: 15px;
-  background-color: #F4FA58;
+  background-color: #f4fa58;
   font: bold 20px/1 "Orbitron";
 }
 #news.on article {
@@ -505,12 +508,12 @@ header.main .inner .fa-bars {
 #visual .inner .lorem h1 {
   font: 10px/1 "arial";
   color: orange;
-  margin: 10px 20px;
+  margin: 20px 20px 20px;
 }
 #visual .inner .lorem > p {
   font: 18px/1.2 "Caveat";
   color: #fff;
-  margin: 10px 27px;
+  margin: 20px 10px 20px;
 }
 #visual .inner .lorem span {
   font: 10px/1.2 "Caveat";
@@ -600,12 +603,13 @@ header.main .inner .fa-bars {
   align-content: center;
   flex-wrap: wrap;
 }
-#pics p {
+#pics .mtxt {
   font: bold 100px/1 "Orbitron";
   color: rgb(146, 146, 146);
   position: absolute;
   top: 100px;
   left: 100px;
+  z-index: 9;
 }
 #pics h3 {
   font: bold 60px/1 "Orbitron";
@@ -614,28 +618,134 @@ header.main .inner .fa-bars {
   top: 160px;
   left: 100px;
   text-shadow: 20px 20px 50px rgba(0, 0, 0, 0.4);
+  z-index: 9;
+}
+#pics .inner {
+  width: 1180px;
+  max-width: 1180px;
+  margin: 0 auto;
 }
 #pics ul {
-  width: 1180px;
+  position: relative;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;
+  margin-top: 180px;
 }
 #pics ul::after {
   content: "";
   display: block;
   clear: both;
 }
+#pics ul .txt-wrap1 {
+  position: absolute;
+  right: 477px;
+  top: 125px;
+  width: 200px;
+  height: 200px;
+  background-color: #000;
+}
+#pics ul .txt-wrap1 .num {
+  font: 12px/1 "arial";
+  color: orange;
+  margin: 20px 20px 20px;
+}
+#pics ul .txt-wrap1 .tit {
+  font: 20px/1.2 "Caveat";
+  color: #fff;
+  margin: 20px 5px 20px;
+}
+#pics ul .txt-wrap1 .txt {
+  font: 10px/1.2 "Caveat";
+  color: #999;
+  margin: 10px 15px;
+  display: block;
+  padding: 5px;
+}
+#pics ul .txt-wrap2 {
+  position: absolute;
+  left: 90px;
+  bottom: 217px;
+  width: 200px;
+  height: 200px;
+  background-color: #000;
+}
+#pics ul .txt-wrap2 .num {
+  font: 12px/1 "arial";
+  color: orange;
+  margin: 20px 20px 20px;
+}
+#pics ul .txt-wrap2 .tit {
+  font: 20px/1.2 "Caveat";
+  color: #fff;
+  margin: 20px 17px 20px;
+}
+#pics ul .txt-wrap2 .txt {
+  font: 10px/1.2 "Caveat";
+  color: #999;
+  margin: 10px 15px;
+  display: block;
+  padding: 5px;
+}
+#pics ul .txt-wrap3 {
+  position: absolute;
+  right: 174px;
+  bottom: -54px;
+  width: 200px;
+  height: 200px;
+  background-color: #000;
+}
+#pics ul .txt-wrap3 .num {
+  font: 12px/1 "arial";
+  color: orange;
+  margin: 20px 20px 20px;
+}
+#pics ul .txt-wrap3 .tit {
+  font: 20px/1.2 "Caveat";
+  color: #fff;
+  margin: 20px 17px 20px;
+}
+#pics ul .txt-wrap3 .txt {
+  font: 10px/1.2 "Caveat";
+  color: #999;
+  margin: 10px 15px;
+  display: block;
+  padding: 5px;
+}
+#pics ul .txt-wrap4 {
+  position: absolute;
+  left: 100px;
+  bottom: 0px;
+  width: 465px;
+  height: 125px;
+  background-color: #111, #444;
+}
+#pics ul .txt-wrap4 .tit {
+  font: bold 15px/1.2 "Poiret One";
+  color: #fff;
+  text-align: center;
+  margin-bottom: 12px;
+}
+#pics ul .txt-wrap4 .txt {
+  font: 10px/1.2 "Poiret One";
+  color: #fff;
+  text-align: center;
+}
 #pics ul li {
-  width: 30%;
-  height: 30vh;
+  width: 35%;
+  height: 310px;
   overflow: hidden;
   object-fit: cover;
   float: left;
+  margin-left: 90px;
+  margin-bottom: 15px;
 }
 #pics ul li img {
   width: 100%;
+  height: 100%;
+}
+#pics ul li:nth-of-type(3) img {
+  display: none;
 }
 
 .scroll_navi {

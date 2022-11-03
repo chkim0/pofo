@@ -47,7 +47,7 @@ function Section() {
                     </p>
                 </div>
             </Box>
-            <Box type={'txt'} bg={'#bff7fa'}>
+            <Box type={'txt'} bg={'#ccc'}>
                 <div>
                     <FontAwesomeIcon icon={faRotate} />
                     <p>
@@ -71,7 +71,7 @@ function Section() {
                     <p>
                         <strong>A Dazzling Place</strong>
                         <em>
-                        Happiness in this world, when it comes, comes incidentally. Make it the object of pursuit, and it leads us a wild-goose chase, and is never attained. All sorts of persons, and every individual, has a place to fill in the world, and is important in some respects, whether he chooses to be so or not.
+                            Happiness in this world, when it comes, comes incidentally. Make it the object of pursuit, and it leads us a wild-goose chase, and is never attained. All sorts of persons, and every individual, has a place to fill in the world, and is important in some respects, whether he chooses to be so or not.
                         </em>
                     </p>
                 </div>
@@ -87,7 +87,7 @@ function Section() {
                     <strong>Inform</strong>
                     <br />
                     <em>
-                    An engaged woman is always more agreeable than a disengaged. 
+                        An engaged woman is always more agreeable than a disengaged.
                     </em>
                 </div>
             </Box>
