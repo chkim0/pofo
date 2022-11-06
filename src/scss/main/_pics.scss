@@ -2,7 +2,7 @@
 #pics {
 	width: 100%;
 	height: 100vh;
-	background: linear-gradient(180deg, #111, #444);
+	background: linear-gradient(360deg, #222, #000);
 	position: relative;
 	padding: 10vw;
 	overflow: hidden;
@@ -47,8 +47,8 @@
 
 		.txt-wrap1 {
 			position: absolute;
-			right: 477px;
-			top: 125px;
+			right: 139px;
+			top: 99px;
 			width: 200px;
 			height: 200px;
 			background-color: #000;
@@ -74,7 +74,7 @@
 		.txt-wrap2 {
 			position: absolute;
 			left: 90px;
-			bottom: 217px;
+			bottom: 170px;
 			width: 200px;
 			height: 200px;
 			background-color: #000;
@@ -98,8 +98,8 @@
 		}
 		.txt-wrap3 {
 			position: absolute;
-			right: 174px;
-			bottom: -54px;
+			right: 138px;
+			bottom: 5px;
 			width: 200px;
 			height: 200px;
 			background-color: #000;
@@ -125,7 +125,7 @@
 			position: absolute;
 			left: 100px;
 			bottom: 0px;
-			width: 465px;
+			width: 400px;
 			height: 125px;
 			background-color: #111, #444;
 			.tit {
@@ -142,18 +142,22 @@
 		}
 
 		li {
-			width: 35%;
-			height: 310px;
+			width: 28%;
+			height: 300px;
 			overflow: hidden;
 			object-fit: cover;
 			float: left;
 			margin-left: 90px;
 			margin-bottom: 15px;
+			border: 3px solid #333;
+
 			img {
 				width: 100%;
 				height: 100%;
 			}
 			&:nth-of-type(3) {
+				border: none;
+				border-bottom: none;
 				img {
 					display: none;
 				}

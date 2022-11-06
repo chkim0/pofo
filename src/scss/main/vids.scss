@@ -1,9 +1,8 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Orbitron:wght@900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Orbitron:wght@900&display=swap");
 #vids {
 	width: 100%;
 	height: 100vh;
-	background: linear-gradient(45deg, #000, #222);
+	background: #000;
 	position: relative;
 
 	.swiper {
@@ -21,6 +20,9 @@
 				opacity: 0.5;
 				transform: scale(0.8);
 				transition: opacity 0.5s, transform 0.5s;
+				&:nth-of-type(1) {
+					transform: rotate(15deg);
+				}
 
 				.pic {
 					width: 100%;
@@ -37,8 +39,9 @@
 				}
 
 				h2 {
-					margin-top: 65px;
-					font: normal 40px/1 'Caveat';
+					margin-top: 35px;
+					font: normal 40px/1 "Caveat";
+
 					color: #333;
 				}
 			}

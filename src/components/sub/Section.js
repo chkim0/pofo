@@ -20,9 +20,22 @@ const SectionWrap = styled.section`
 	width: 85%;
 	position: relative;
 	margin-left: 15%;
+    .sectxt{
+            display:block;
+            width:100%;
+            heigth: 180px;
+            
+            span{
+                font: 20px/1 'arial';
+                color: #fff;
+                text-aline: center;
+            }
+
+        }
 	@media screen and (max-width: ${({ theme }) => theme.web_b} ) {		
 		width: 100%;	
 		margin-left: 0%;
+        
 	}
 `;
 
@@ -30,6 +43,12 @@ const SectionWrap = styled.section`
 function Section() {
     return (
         <SectionWrap>
+
+            <figure className="bg">
+                <img src={process.env.PUBLIC_URL + '/img/deparsub.jpg'} />
+            </figure>
+
+
             <Box type={'bg'} bg={bgs[0]}>
                 <div>
                     <span>SUSAN</span>

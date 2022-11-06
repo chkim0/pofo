@@ -250,7 +250,7 @@ header.main .inner .fa-bars {
 #news {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(45deg, #000, #222);
+  background: linear-gradient(180deg, #222, #000);
   padding: 10vh;
   display: flex;
   flex-wrap: wrap;
@@ -289,49 +289,64 @@ header.main .inner .fa-bars {
   color: #fff;
 }
 #news .inner article {
-  width: 26%;
-  height: 250px;
-  background: #f4fa58;
-  padding: 20px;
-  margin: 10px;
+  width: 33%;
+  height: 350px;
+  padding: 0;
+  margin: 0;
   transform: translateY(100px) rotateY(180deg);
   opacity: 0;
   transition-duration: 0.5s;
+  position: relative;
+}
+#news .inner article .bg img {
+  width: 94%;
+  height: 100%;
+  z-index: index 2;
 }
 #news .inner article h3 {
   font: bold 22px/1 "Caveat";
   color: #000;
-  margin: 10px auto 15px;
+  margin: 0px auto 15px;
   text-align: center;
+  position: absolute;
+  top: 60px;
+  left: 85px;
+  z-index: 3;
+  width: 52%;
 }
 #news .inner article p {
-  margin-top: 30px;
+  margin-top: 68px;
   font: 15px/1 "Caveat";
   color: #000;
   text-align: center;
+  position: absolute;
+  top: 80px;
+  left: 69px;
+  z-index: 3;
+  width: 63%;
 }
 #news .inner article:hover {
   transform: rotate(5deg);
 }
 #news .inner .newssec {
-  width: 1000px;
-  height: 380px;
+  width: 900px;
+  height: 300px;
   border-top: 1px solid #fff;
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding-top: 50px;
+  padding-top: 25px;
 }
 #news .inner .newssec .pic {
   flex: 1;
-  height: 325px;
+  height: 258px;
   background: #000;
   overflow: hidden;
   position: relative;
   z-index: 10;
 }
 #news .inner .newssec .pic img {
-  width: 100%;
+  width: 70%;
   height: 100%;
   object-fit: cover;
 }
@@ -343,7 +358,7 @@ header.main .inner .fa-bars {
 }
 #news .inner .newssec .inputBox input[type=text] {
   width: 100%;
-  height: 85px;
+  height: 70px;
   padding: 8px 10px;
   border: 1px solid #aaa;
   resize: none;
@@ -352,7 +367,7 @@ header.main .inner .fa-bars {
 }
 #news .inner .newssec .inputBox textarea {
   width: 100%;
-  height: 185px;
+  height: 180px;
   padding: 8px 10px;
   border: 1px solid #aaa;
   resize: none;
@@ -365,13 +380,6 @@ header.main .inner .fa-bars {
 }
 #news .inner .newssec .inputBox .txt p {
   font: normal 15px/1 "Caveat";
-}
-#news .inner .newssec .inputBox .btsSet button {
-  border: 3px ridge #333;
-  width: 20px;
-  height: 15px;
-  background-color: #f4fa58;
-  font: bold 20px/1 "Orbitron";
 }
 #news.on article {
   transform: translateY(0) rotateY(0deg);
@@ -399,7 +407,7 @@ header.main .inner .fa-bars {
 #visual {
   width: 100%;
   height: 90vh;
-  background: linear-gradient(45deg, #222, #000);
+  background: linear-gradient(180deg, #222, #000);
 }
 #visual .inner {
   width: 1180px;
@@ -526,7 +534,7 @@ header.main .inner .fa-bars {
 #vids {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(45deg, #000, #222);
+  background: #000;
   position: relative;
 }
 #vids .swiper {
@@ -545,6 +553,9 @@ header.main .inner .fa-bars {
   transform: scale(0.8);
   transition: opacity 0.5s, transform 0.5s;
 }
+#vids .swiper .swiper-slide .inner:nth-of-type(1) {
+  transform: rotate(15deg);
+}
 #vids .swiper .swiper-slide .inner .pic {
   width: 100%;
   height: 300px;
@@ -558,7 +569,7 @@ header.main .inner .fa-bars {
   object-fit: cover;
 }
 #vids .swiper .swiper-slide .inner h2 {
-  margin-top: 65px;
+  margin-top: 35px;
   font: normal 40px/1 "Caveat";
   color: #333;
 }
@@ -595,7 +606,7 @@ header.main .inner .fa-bars {
 #pics {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(180deg, #111, #444);
+  background: linear-gradient(360deg, #222, #000);
   position: relative;
   padding: 10vw;
   overflow: hidden;
@@ -639,8 +650,8 @@ header.main .inner .fa-bars {
 }
 #pics ul .txt-wrap1 {
   position: absolute;
-  right: 477px;
-  top: 125px;
+  right: 139px;
+  top: 99px;
   width: 200px;
   height: 200px;
   background-color: #000;
@@ -665,7 +676,7 @@ header.main .inner .fa-bars {
 #pics ul .txt-wrap2 {
   position: absolute;
   left: 90px;
-  bottom: 217px;
+  bottom: 170px;
   width: 200px;
   height: 200px;
   background-color: #000;
@@ -689,8 +700,8 @@ header.main .inner .fa-bars {
 }
 #pics ul .txt-wrap3 {
   position: absolute;
-  right: 174px;
-  bottom: -54px;
+  right: 138px;
+  bottom: 5px;
   width: 200px;
   height: 200px;
   background-color: #000;
@@ -716,7 +727,7 @@ header.main .inner .fa-bars {
   position: absolute;
   left: 100px;
   bottom: 0px;
-  width: 465px;
+  width: 400px;
   height: 125px;
   background-color: #111, #444;
 }
@@ -732,17 +743,22 @@ header.main .inner .fa-bars {
   text-align: center;
 }
 #pics ul li {
-  width: 35%;
-  height: 310px;
+  width: 28%;
+  height: 300px;
   overflow: hidden;
   object-fit: cover;
   float: left;
   margin-left: 90px;
   margin-bottom: 15px;
+  border: 3px solid #333;
 }
 #pics ul li img {
   width: 100%;
   height: 100%;
+}
+#pics ul li:nth-of-type(3) {
+  border: none;
+  border-bottom: none;
 }
 #pics ul li:nth-of-type(3) img {
   display: none;

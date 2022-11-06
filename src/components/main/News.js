@@ -141,11 +141,17 @@ function News() {
                     if (idx >= 3) return; //5개의 인덱스만 가져다 달라는 의미
                     /*날짜넣기*/
                     return (
+
                         <article key={idx}>
+                            <figure className="bg">
+                                <img src={process.env.PUBLIC_URL + '/img/post2.png'} />
+                            </figure>
                             <h2>{post.date}</h2>
                             <h3>{post.title}</h3>
                             <p>{post.content}</p>
                         </article>
+
+
                     );
                 })}
 
@@ -156,9 +162,9 @@ function News() {
                     </figure>
                     <div className="inputBox">
 
-                        <input type="text" placeholder="제목을 입력하세요" ref={input} />
+                        <input type="text" placeholder="Please enter a title" ref={input} />
                         <br />
-                        <textarea cols="30" rows="5" placeholder="본문을 입력하세요" ref={textarea}></textarea>
+                        <textarea cols="30" rows="5" placeholder="Please enter the contents" ref={textarea}></textarea>
                         <br />
                         <div className="btnSet">
                             <button onClick={resetForm}>CANCEL</button>
