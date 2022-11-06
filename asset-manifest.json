@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/pofo/static/css/main.c9284a35.css",
-    "main.js": "/pofo/static/js/main.3a9394c7.js",
+    "main.css": "/pofo/static/css/main.44858bc0.css",
+    "main.js": "/pofo/static/js/main.ac090e53.js",
     "index.html": "/pofo/index.html",
-    "main.c9284a35.css.map": "/pofo/static/css/main.c9284a35.css.map",
-    "main.3a9394c7.js.map": "/pofo/static/js/main.3a9394c7.js.map"
+    "main.44858bc0.css.map": "/pofo/static/css/main.44858bc0.css.map",
+    "main.ac090e53.js.map": "/pofo/static/js/main.ac090e53.js.map"
   },
   "entrypoints": [
-    "static/css/main.c9284a35.css",
-    "static/js/main.3a9394c7.js"
+    "static/css/main.44858bc0.css",
+    "static/js/main.ac090e53.js"
   ]
 }
