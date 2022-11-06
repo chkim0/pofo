@@ -1043,7 +1043,7 @@ header.main .inner .fa-bars {
   }
 }
 .Location {
-  background: linear-gradient(45deg, #222, #000);
+  background: linear-gradient(90deg, #222, #000);
 }
 .Location figure {
   background: lightblue;
@@ -1080,9 +1080,10 @@ header.main .inner .fa-bars {
   cursor: pointer;
   margin-left: 10px;
   transition: 0.5s;
+  background: #eee;
 }
 .Location .btnSet ul li.on {
-  background: #ddd;
+  background: #888;
   border: 1px solid #333;
   color: #000;
 }
