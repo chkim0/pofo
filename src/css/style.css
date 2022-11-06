@@ -123,8 +123,7 @@ footer .inner p {
 }
 header {
   width: 100%;
-  background: #000;
-  margin-top: 10px;
+  background: #111;
 }
 header .inner {
   width: 1180px;
@@ -166,16 +165,16 @@ header .inner .fa-bars {
 }
 header.sub {
   border-bottom: 1px solid #999;
-  background: #fff;
+  background: #222;
 }
 header.sub .inner h1 a {
-  color: #222;
+  color: #fff;
 }
 header.sub .inner #gnb li a {
-  color: #333;
+  color: #fff;
 }
 header.sub .inner .fa-bars {
-  color: #333;
+  color: #fff;
 }
 header.main {
   background: transparent;
