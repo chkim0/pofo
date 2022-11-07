@@ -29,7 +29,11 @@ function Pics({ Scrolled, start }) {
             return (
 
               <li key={pic.id}>
-                <img src={`https://live.staticflickr.com/${pic.server}/${pic.id}_${pic.secret}_m.jpg`} />
+                <figure className="bg">
+                  <img src={process.env.PUBLIC_URL + '/img/pngg.png'} className="picbg" />
+
+                </figure>
+                <img src={`https://live.staticflickr.com/${pic.server}/${pic.id}_${pic.secret}_m.jpg`} className='picp' />
 
               </li>
 
