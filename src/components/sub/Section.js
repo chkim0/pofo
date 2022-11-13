@@ -19,7 +19,7 @@ const bgs = [
 const SectionWrap = styled.section`
 	width: 85%;
 	position: relative;
-	margin-left: 15%;
+	margin-left: 10%;
     .sectxt{
             display:block;
             width:100%;

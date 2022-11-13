@@ -66,7 +66,7 @@
 			transform: skewX(315deg);
 			position: absolute;
 			background-color: burlywood;
-			z-index: 7;
+			z-index: 5;
 			p {
 				font: bold 12px/1 "Poiret One";
 				color: #fff;
@@ -89,8 +89,9 @@
 			height: 200px;
 			background: #111;
 			z-index: 3;
-			top: 626px;
+			top: 711px;
 			left: 0px;
+			z-index: 1;
 		}
 
 		.pic {
@@ -141,15 +142,41 @@
 		> .inner {
 			width: 50%;
 			.vpic {
-				width: 50%;
-				margin-bottom: 40px;
-				.since {
-				}
 				img {
-					width: 50%;
+					width: 45%;
 				}
 			}
+			.since {
+				display: none;
+			}
+			h1 {
+				width: 50%;
+			}
 		}
+	}
+	#visual .inner {
+		width: 100%;
+	}
+	#visual .inner .visbtn {
+		left: 105px;
+	}
+	#visual .inner .pic {
+		left: 83px;
+	}
+	#visual .inner .lorem {
+		top: 669px;
+		left: 220px;
+	}
+
+	#visual .inner .vpic {
+		top: 81px;
+		left: 0;
+		width: 100%;
+	}
+	#visual .inner > h1 {
+		width: 80%;
+		left: 50%;
+		transform: translateX(-50%);
 	}
 }
 

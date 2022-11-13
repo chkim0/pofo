@@ -84,7 +84,7 @@ footer .inner p {
 .content > .inner {
   width: 1180px;
   min-height: 400px;
-  margin: 100px auto 150px;
+  margin: 100px auto 0px;
   position: relative;
   opacity: 0;
   transform: translateY(100px);
@@ -125,6 +125,30 @@ header {
   width: 100%;
   background: #111;
 }
+header .gnbMo {
+  width: 270px;
+  height: 100vh;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 35px 30px;
+  z-index: 30;
+  transition: 0.5s;
+}
+header .gnbMo.on {
+  left: 0;
+}
+header .gnbMo li {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #666;
+}
+header .gnbMo li a {
+  display: block;
+  font: bold 15px/1 "Orbitron";
+  color: #000;
+  text-align: center;
+}
 header .inner {
   width: 1180px;
   height: 80px;
@@ -162,6 +186,7 @@ header .inner .fa-bars {
   bottom: 20px;
   right: 40px;
   display: none;
+  cursor: pointer;
 }
 header.sub {
   border-bottom: 1px solid #999;
@@ -182,7 +207,7 @@ header.main {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 999;
 }
 header.main .inner h1 a {
   color: #fff;
@@ -192,6 +217,9 @@ header.main .inner #gnb li a {
 }
 header.main .inner .fa-bars {
   color: #fff;
+}
+header.main .inner .menuMo {
+  display: none;
 }
 
 @media screen and (max-width: 1179px) {
@@ -210,6 +238,33 @@ header.main .inner .fa-bars {
   }
   header .inner .fa-bars {
     display: block;
+  }
+  header .inner #mobileMenu #gnb {
+    display: block;
+  }
+  header .inner .gnbMo {
+    width: 270px;
+    height: 100vh;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 35px 30px;
+    z-index: 999;
+    transition: 0.5s;
+  }
+  header .inner .gnbMo.on {
+    left: 0;
+  }
+  header .inner .gnbMo li {
+    padding: 20px;
+    border-bottom: 1px solid #666;
+  }
+  header .inner .gnbMo li a {
+    display: block;
+    font: bold 15px/1 "Orbitron";
+    color: #000;
+    text-align: center;
   }
 }
 .pop {
@@ -352,6 +407,11 @@ header.main .inner .fa-bars {
   margin-bottom: 15px;
   border: 2px solid #fff;
 }
+#news .inner .newssec .newsbox video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 #news.on article {
   transform: translateY(0px) rotateY(0deg);
   opacity: 1;
@@ -438,7 +498,7 @@ header.main .inner .fa-bars {
   transform: skewX(315deg);
   position: absolute;
   background-color: burlywood;
-  z-index: 7;
+  z-index: 5;
 }
 #visual .inner .visbtn p {
   font: bold 12px/1 "Poiret One";
@@ -460,8 +520,9 @@ header.main .inner .fa-bars {
   height: 200px;
   background: #111;
   z-index: 3;
-  top: 626px;
+  top: 711px;
   left: 0px;
+  z-index: 1;
 }
 #visual .inner .pic {
   width: 250px;
@@ -503,6 +564,52 @@ header.main .inner .fa-bars {
   padding: 5px;
 }
 
+@media screen and (max-width: 1179px) {
+  .visual > .inner {
+    width: 50%;
+  }
+  .visual > .inner .vpic img {
+    width: 45%;
+  }
+  .visual > .inner .since {
+    display: none;
+  }
+  .visual > .inner h1 {
+    width: 50%;
+  }
+  #visual .inner {
+    width: 100%;
+  }
+  #visual .inner .visbtn {
+    left: 105px;
+  }
+  #visual .inner .pic {
+    left: 83px;
+  }
+  #visual .inner .lorem {
+    top: 669px;
+    left: 220px;
+  }
+  #visual .inner .vpic {
+    top: 81px;
+    left: 0;
+    width: 100%;
+  }
+  #visual .inner > h1 {
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media screen and (max-width: 539px) {
+  .Department > .inner article {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .Department > .inner article .inner .pic {
+    height: 200px;
+  }
+}
 #vids {
   width: 100%;
   height: 100vh;

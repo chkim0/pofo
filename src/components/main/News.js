@@ -153,6 +153,7 @@ function News() {
                 <div className="newssec">
                     <a href="#" className="newsbtn"> all news</a>
                     <div className="newsbox">
+                        <video src={process.env.PUBLIC_URL + '/img/vid1.mp4'} autoPlay loop muted />
 
                     </div>
                 </div>
