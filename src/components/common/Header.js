@@ -1,19 +1,24 @@
-import React, { useEffect, useState, useRef } from "react";
+import React from "react";
 import { NavLink, Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { useState, useEffect } from "react";
+import { useRef } from "react";
+import Menu from './Menu';
 // import { useState, useRef } from "react";
 
 
 export default function Header(props) {
     const active = { color: 'orange' };
-    // const [EnableClick, setEnableClick] = useState(true);
+    const [EnableClick, setEnableClick] = useState(false);
+    const menu = useRef(null);
+    // const frame = useRef(null);
+    // const btnclick = () => {
+    //     if (!EnableClick) return;
+    //     setEnableClick(false);
+    //     gnbMo.current.classList.add('on');
 
-    // usState 방법
-    const [isShow, setIsShow] = useState(false);
-
-    //  ref 방법
-    const ref = useRef();
+    // }
 
 
     // const Btncall = () => {
@@ -28,17 +33,7 @@ export default function Header(props) {
         : (url = process.env.PUBLIC_URL + '/img/logo.jpg');
 
 
-    // usState event handler
-    const menuHandler = (active) => {
-        setIsShow(!active);
-    }
 
-    // ref event handler
-    const menuHandler2 = () => {
-        ref.current.classList.contains('on')
-            ? ref.current.classList.remove('on')
-            : ref.current.classList.add('on')
-    }
 
     return (
         <header className={props.type}>
@@ -49,6 +44,7 @@ export default function Header(props) {
                         < img src={url} alt='logo' /> 
                     </Link> */}
                 </h1>
+
                 <ul id="gnb">
                     <li>
                         <NavLink to='/department' activeStyle={active}>
@@ -83,14 +79,9 @@ export default function Header(props) {
                         </NavLink>
                     </li>
                 </ul>
-                {/* 전체메뉴 버튼에 eventHandler 할당*/}
-                <FontAwesomeIcon
-                    onClick={() => menuHandler2()}
-                    icon={faBars}
-                    style={{ cursor: "pointer" }}
+                <FontAwesomeIcon icon={faBars} onClick={() => menu.current.toggle()}
                 />
-                {/* className으로 애니메이션 및 css 할당으로 class 'on'을 동적으로 할당 */}
-                <ul className={`gnbMo${isShow ? ' on' : ''}`} ref={ref}>
+                {/* <ul className="gnbMo" ref={menu}>
                     <li>
                         <NavLink to='/department' activeStyle={active}>
                             Department
@@ -123,7 +114,14 @@ export default function Header(props) {
                             Member
                         </NavLink>
                     </li>
-                </ul>
+                </ul> */}
+
+
+
+
+                {/*menu.current에 담기는 값은 자식컴포넌트에서 useImperativeHandle이 내보내주고 있는 toggle함수*/}
+                <Menu ref={menu} />
+
             </div>
         </header>
     )
