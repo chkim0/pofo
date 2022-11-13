@@ -441,19 +441,19 @@ header.main .inner .menuMo {
   width: 1180px;
   height: 100%;
   position: relative;
-  padding: 10px auto;
-  margin: 0 auto;
+  margin: 0px auto;
   right: 0;
+  padding-top: 81px auto;
 }
 #visual .inner .vpic {
   position: absolute;
-  top: 91px;
-  left: 413px;
-  width: 70%;
+  margin-top: 81px;
+  top: 0;
+  left: 15%;
+  width: 85%;
   height: 70vh;
   opacity: 1;
   z-index: 5;
-  margin: 0 auto;
 }
 #visual .inner .vpic img {
   width: 100%;
@@ -464,13 +464,14 @@ header.main .inner .menuMo {
   position: absolute;
   font: bold 12px/1 "arial";
   color: orange;
-  top: 160px;
-  left: 250px;
+  top: 15%;
+  left: 20%;
+  z-index: 5;
 }
 #visual .inner > h1 {
   position: absolute;
-  top: 190px;
-  left: 235px;
+  top: 20%;
+  left: 20%;
   font: bold 70px/1 "Orbitron";
   color: #fff;
   z-index: 7;
@@ -492,8 +493,8 @@ header.main .inner .menuMo {
   text-align: center;
   height: 25px;
   width: 180px;
-  top: 385px;
-  left: 245px;
+  top: 38%;
+  left: 24%;
   padding-top: 5px;
   transform: skewX(315deg);
   position: absolute;
@@ -516,20 +517,20 @@ header.main .inner .menuMo {
 }
 #visual .inner .bbox {
   position: absolute;
-  width: 1180px;
-  height: 200px;
+  width: 100%;
+  height: 212px;
   background: #111;
   z-index: 3;
-  top: 711px;
+  top: 65%;
   left: 0px;
   z-index: 1;
 }
 #visual .inner .pic {
   width: 250px;
   position: absolute;
-  height: 350px;
-  top: 477px;
-  left: 780px;
+  height: 352px;
+  top: 48%;
+  left: 65%;
   z-index: 6;
 }
 #visual .inner .pic img {
@@ -541,8 +542,8 @@ header.main .inner .menuMo {
   height: 200px;
   background: #000;
   position: absolute;
-  top: 627px;
-  right: -1px;
+  top: 66%;
+  right: 0;
   z-index: 8;
   padding: 10px;
 }
@@ -565,49 +566,75 @@ header.main .inner .menuMo {
 }
 
 @media screen and (max-width: 1179px) {
-  .visual > .inner {
-    width: 50%;
-  }
-  .visual > .inner .vpic img {
-    width: 45%;
-  }
-  .visual > .inner .since {
-    display: none;
-  }
-  .visual > .inner h1 {
-    width: 50%;
-  }
-  #visual .inner {
+  #visual > .inner {
     width: 100%;
   }
-  #visual .inner .visbtn {
-    left: 105px;
+  #visual > .inner .visbtn {
+    top: 38%;
+    left: 24%;
+    margin: 0 auto;
   }
-  #visual .inner .pic {
-    left: 83px;
+  #visual > .inner .pic {
+    display: none;
   }
-  #visual .inner .lorem {
-    top: 669px;
-    left: 220px;
+  #visual > .inner .lorem {
+    top: 64%;
+    right: 0;
   }
-  #visual .inner .vpic {
-    top: 81px;
+  #visual > .inner .vpic {
     left: 0;
     width: 100%;
   }
-  #visual .inner > h1 {
+  #visual > .inner .since {
+    top: 18%;
+    left: 15%;
+    z-index: 5;
+    position: absolute;
+  }
+  #visual > .inner .bbox {
+    display: none;
+  }
+  #visual > .inner > h1 {
+    font-size: 50px;
     width: 80%;
     left: 50%;
     transform: translateX(-50%);
   }
 }
 @media screen and (max-width: 539px) {
-  .Department > .inner article {
+  #visual > .inner {
     width: 100%;
-    margin-bottom: 30px;
   }
-  .Department > .inner article .inner .pic {
-    height: 200px;
+  #visual > .inner .visbtn {
+    top: 38%;
+    left: 24%;
+    margin: 0 auto;
+  }
+  #visual > .inner .pic {
+    display: none;
+  }
+  #visual > .inner .lorem {
+    top: 64%;
+    right: 0;
+  }
+  #visual > .inner .vpic {
+    left: 0;
+    width: 100%;
+  }
+  #visual > .inner .since {
+    top: 18%;
+    left: 15%;
+    z-index: 5;
+    position: absolute;
+  }
+  #visual > .inner .bbox {
+    display: none;
+  }
+  #visual > .inner > h1 {
+    font-size: 50px;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 #vids {
@@ -697,22 +724,21 @@ header.main .inner .menuMo {
   font: bold 100px/1 "Orbitron";
   color: rgb(146, 146, 146);
   position: absolute;
-  top: 100px;
-  left: 100px;
+  top: 10%;
+  left: 10%;
   z-index: 9;
 }
 #pics h3 {
   font: bold 60px/1 "Orbitron";
   color: #fff;
   position: absolute;
-  top: 160px;
-  left: 100px;
+  top: 16%;
+  left: 10%;
   text-shadow: 20px 20px 50px rgba(0, 0, 0, 0.4);
   z-index: 9;
 }
 #pics .inner {
   width: 1180px;
-  max-width: 1180px;
   margin: 0 auto;
 }
 #pics ul {
@@ -850,6 +876,33 @@ header.main .inner .menuMo {
   display: none;
 }
 
+@media screen and (max-width: 1179px) {
+  #pics > .inner {
+    width: 100%;
+  }
+  #pics > .inner .mtxt {
+    font: bold 50px/1 "Orbitron";
+    color: rgb(146, 146, 146);
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    z-index: 9;
+  }
+  #pics > .inner h3 {
+    font: bold 30px/1 "Orbitron";
+    color: #fff;
+    position: absolute;
+    top: 16%;
+    left: 10%;
+    text-shadow: 20px 20px 50px rgba(0, 0, 0, 0.4);
+    z-index: 9;
+  }
+}
+@media screen and (max-width: 539px) {
+  #pics > .inner {
+    width: 100%;
+  }
+}
 .scroll_navi {
   position: fixed;
   top: 50%;

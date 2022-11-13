@@ -1,24 +1,35 @@
-.scroll_navi{
-    position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 50px;
-    z-index: 3;
-    background: #000;
-    border: 2px solid #fff;
+.scroll_navi {
+	position: fixed;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 50px;
+	z-index: 3;
+	background: #000;
+	border: 2px solid #fff;
 
-    li{
-        width: 15px;
-        height: 10px;
-        border: 2px solid #fff;
-        background: #fff;
-        margin: 10px;
-        cursor: pointer;
-        transition: 0.5s;
-        &.on{
-            height: 100px;
-            background: #fff;
-            border: #fff;
-        }
-    }
+	li {
+		width: 15px;
+		height: 10px;
+		border: 2px solid #fff;
+		background: #fff;
+		margin: 10px;
+		cursor: pointer;
+		transition: 0.5s;
+		&.on {
+			height: 100px;
+			background: #fff;
+			border: #fff;
+		}
+	}
+}
+@media screen and (max-width: $tablet) {
+	.scroll_navi {
+		display: none;
+	}
+}
+
+@media screen and (max-width: $mobile) {
+	.scroll_navi {
+		display: none;
+	}
 }

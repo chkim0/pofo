@@ -137,19 +137,21 @@ function News() {
                     <span>OUR NEWS</span>
                     <h1>What's New?</h1>
                 </div>
+
                 {Posts.map((post, idx) => {
                     if (idx >= 3) return; //5개의 인덱스만 가져다 달라는 의미
                     /*날짜넣기*/
                     return (
 
                         <article key={idx}>
-                            <h2>{post.date}</h2>
+
                             <h3>{post.title}</h3>
                             <p>{post.content}</p>
                         </article>
 
                     );
                 })}
+
                 <div className="newssec">
                     <a href="#" className="newsbtn"> all news</a>
                     <div className="newsbox">
