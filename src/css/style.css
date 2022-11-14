@@ -325,8 +325,8 @@ header.main .inner .menuMo {
   display: block;
   margin: 0 auto;
   position: absolute;
-  top: -35px;
-  left: 255px;
+  top: -4%;
+  left: 5%;
 }
 #news .inner .newsheader > span {
   font: 10px/1 "arial";
@@ -578,8 +578,7 @@ header.main .inner .menuMo {
     display: none;
   }
   #visual > .inner .lorem {
-    top: 64%;
-    right: 0;
+    display: none;
   }
   #visual > .inner .vpic {
     left: 0;
@@ -614,8 +613,7 @@ header.main .inner .menuMo {
     display: none;
   }
   #visual > .inner .lorem {
-    top: 64%;
-    right: 0;
+    display: none;
   }
   #visual > .inner .vpic {
     left: 0;
@@ -747,6 +745,7 @@ header.main .inner .menuMo {
   display: flex;
   flex-wrap: wrap;
   margin-top: 180px;
+  object-fit: cover;
 }
 #pics ul::after {
   content: "";
@@ -755,8 +754,8 @@ header.main .inner .menuMo {
 }
 #pics ul .txt-wrap1 {
   position: absolute;
-  right: 139px;
-  top: 99px;
+  right: 15%;
+  top: 0%;
   width: 200px;
   height: 200px;
   background-color: #000;
@@ -780,8 +779,8 @@ header.main .inner .menuMo {
 }
 #pics ul .txt-wrap2 {
   position: absolute;
-  left: 90px;
-  bottom: 170px;
+  left: 0%;
+  bottom: 30%;
   width: 200px;
   height: 200px;
   background-color: #000;
@@ -805,8 +804,8 @@ header.main .inner .menuMo {
 }
 #pics ul .txt-wrap3 {
   position: absolute;
-  right: 138px;
-  bottom: 5px;
+  right: 15%;
+  bottom: 2%;
   width: 200px;
   height: 200px;
   background-color: #000;
@@ -830,8 +829,8 @@ header.main .inner .menuMo {
 }
 #pics ul .txt-wrap4 {
   position: absolute;
-  left: 100px;
-  bottom: 0px;
+  left: 10%;
+  bottom: 0%;
   width: 400px;
   height: 125px;
   background-color: #111, #444;
@@ -865,7 +864,7 @@ header.main .inner .menuMo {
 }
 #pics ul li .picp {
   width: 100%;
-  height: 100%;
+  height: 360px;
   padding: 32px 41px 71px;
 }
 #pics ul li:nth-of-type(3) {
@@ -897,6 +896,42 @@ header.main .inner .menuMo {
     text-shadow: 20px 20px 50px rgba(0, 0, 0, 0.4);
     z-index: 9;
   }
+  #pics > .inner ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #pics > .inner ul li {
+    height: 100%;
+  }
+  #pics > .inner li:nth-of-type(1) .picp {
+    height: 295px;
+  }
+  #pics > .inner li:nth-of-type(2) {
+    display: none;
+  }
+  #pics > .inner li:nth-of-type(3) {
+    display: none;
+  }
+  #pics > .inner li:nth-of-type(4) {
+    display: none;
+  }
+  #pics > .inner .txt-wrap1 {
+    top: 35%;
+    right: 10%;
+  }
+  #pics > .inner .txt-wrap2 {
+    display: none;
+  }
+  #pics > .inner .txt-wrap3 {
+    display: none;
+  }
+  #pics > .inner .txt-wrap4 {
+    position: absolute;
+    left: 33%;
+    bottom: -43%;
+    width: 400px;
+  }
 }
 @media screen and (max-width: 539px) {
   #pics > .inner {
@@ -927,6 +962,16 @@ header.main .inner .menuMo {
   border: #fff;
 }
 
+@media screen and (max-width: 1179px) {
+  .scroll_navi {
+    display: none;
+  }
+}
+@media screen and (max-width: 539px) {
+  .scroll_navi {
+    display: none;
+  }
+}
 .Community {
   background: linear-gradient(45deg, #222, #000);
 }
