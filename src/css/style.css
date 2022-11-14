@@ -1237,24 +1237,33 @@ header.main .inner .menuMo {
   height: 500px;
   background: #000;
 }
-.Location .btnSet {
+.Location .locationsec {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.Location .locationsec .btnSet {
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
   justify-content: space-between;
   margin-top: 50px;
 }
-.Location .btnSet button {
+.Location .locationsec .btnSet button {
   cursor: pointer;
   height: 30px;
   border: 1px solid #888;
   padding: 5px 20px;
   font: 12px/1 "Orbitron";
 }
-.Location .btnSet ul {
+.Location .locationsec .btnSet ul {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.Location .btnSet ul li {
+.Location .locationsec .btnSet ul li {
   font: 12px/1 "Orbitron";
   border: 1px solid #888;
   height: 30px;
@@ -1266,7 +1275,7 @@ header.main .inner .menuMo {
   transition: 0.5s;
   background: #eee;
 }
-.Location .btnSet ul li.on {
+.Location .locationsec .btnSet ul li.on {
   background: #888;
   border: 1px solid #333;
   color: #000;

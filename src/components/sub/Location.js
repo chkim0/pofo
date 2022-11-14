@@ -100,26 +100,31 @@ export default function Location() {
 
     return (
         <Layout name={"Location"}>
-            <div id="map" ref={container}></div>
-
-            <div className="btnSet">
-                <button onClick={() => { setTraffic(!Traffic) }
-                }>
-                    {/* Traffic의 값에 따라서 버튼의 내용도 변경 */}
-                    {Traffic ? 'Traffic OFF' : 'Traffic ON'}
-                </button>
-                <ul className="branch" ref={btns}>
-                    {
-                        Info.map((el, idx) => {
-                            return (
-                                <li key={idx} onClick={() => setIndex(idx)}>
-                                    {el.title}
-                                </li>
-                            );
-                        })
-                    }
-                </ul>
+            <div className="locationsec">
+                <div className="btnSet">
+                    <button onClick={() => { setTraffic(!Traffic) }
+                    }>
+                        {/* Traffic의 값에 따라서 버튼의 내용도 변경 */}
+                        {Traffic ? 'Traffic OFF' : 'Traffic ON'}
+                    </button>
+                    <ul className="branch" ref={btns}>
+                        {
+                            Info.map((el, idx) => {
+                                return (
+                                    <li key={idx} onClick={() => setIndex(idx)}>
+                                        {el.title}
+                                    </li>
+                                );
+                            })
+                        }
+                    </ul>
+                </div>
+                <div id="map" ref={container}></div>
             </div>
+
+
+
+
 
 
 
