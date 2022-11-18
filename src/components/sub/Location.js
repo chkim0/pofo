@@ -11,21 +11,40 @@ export default function Location() {
             latlng: new kakao.maps.LatLng(37.5725254, 126.9756429),
             imgUrl: `${process.env.PUBLIC_URL}/img/marker1.png`,
             imgSize: new kakao.maps.Size(232, 99),
-            imgPos: { offset: new kakao.maps.Point(116, 99) }
+            imgPos: { offset: new kakao.maps.Point(116, 99) },
+            adress: '175, Sejong-daero, Jongno-gu, Seoul'
         },
         {
             title: 'BUSAN AWARDS',
             latlng: new kakao.maps.LatLng(35.1711778, 129.1271956),
             imgUrl: `${process.env.PUBLIC_URL}/img/marker2.png`,
             imgSize: new kakao.maps.Size(232, 99),
-            imgPos: { offset: new kakao.maps.Point(116, 99) }
+            imgPos: { offset: new kakao.maps.Point(116, 99) },
+            adress: '120 Suyeonggangbyeon-daero, Haeundae-gu, Busan'
         },
         {
             title: ' GANGNEUNG AWARDS',
             latlng: new kakao.maps.LatLng(37.7547654, 128.8966476),
             imgUrl: `${process.env.PUBLIC_URL}/img/marker3.png`,
             imgSize: new kakao.maps.Size(232, 99),
-            imgPos: { offset: new kakao.maps.Point(116, 99) }
+            imgPos: { offset: new kakao.maps.Point(116, 99) },
+            adress: '220 Olympic Road, Pyeongchang-gun, Gangwon-do'
+        },
+        {
+            title: ' JECHEON AWARDS',
+            latlng: new kakao.maps.LatLng(37.149082, 128.2159946),
+            imgUrl: `${process.env.PUBLIC_URL}/img/marker2.png`,
+            imgSize: new kakao.maps.Size(232, 99),
+            imgPos: { offset: new kakao.maps.Point(116, 99) },
+            adress: '110 Cheongjeon-dong, Jecheon-si, Chungcheongbuk-do'
+        },
+        {
+            title: ' JEONJU AWARDS',
+            latlng: new kakao.maps.LatLng(35.8183495, 127.1425492),
+            imgUrl: `${process.env.PUBLIC_URL}/img/marker1.png`,
+            imgSize: new kakao.maps.Size(232, 99),
+            imgPos: { offset: new kakao.maps.Point(116, 99) },
+            adress: '22 Jeonju Guesthouse 3-gil, Wansan-gu, Jeonju-si'
         },
     ];
 
@@ -100,26 +119,29 @@ export default function Location() {
 
     return (
         <Layout name={"Location"}>
-            <div className="locationsec">
-                <div className="btnSet">
-                    <button onClick={() => { setTraffic(!Traffic) }
+            <div className="inner">
+                <div className="locationsec">
+                    <div className="btnSet">
+                        {/* <button onClick={() => { setTraffic(!Traffic) }
                     }>
-                        {/* Traffic의 값에 따라서 버튼의 내용도 변경 */}
+                        Traffic의 값에 따라서 버튼의 내용도 변경 
                         {Traffic ? 'Traffic OFF' : 'Traffic ON'}
-                    </button>
-                    <ul className="branch" ref={btns}>
-                        {
-                            Info.map((el, idx) => {
-                                return (
-                                    <li key={idx} onClick={() => setIndex(idx)}>
-                                        {el.title}
-                                    </li>
-                                );
-                            })
-                        }
-                    </ul>
+                    </button> */}
+                        <ul className="branch" ref={btns}>
+                            {
+                                Info.map((el, idx) => {
+                                    return (
+                                        <li key={idx} onClick={() => setIndex(idx)}>
+                                            <h2>{el.title}</h2>
+                                            <p>{el.adress}</p>
+                                        </li>
+                                    );
+                                })
+                            }
+                        </ul>
+                    </div>
+                    <div id="map" ref={container}></div>
                 </div>
-                <div id="map" ref={container}></div>
             </div>
 
 

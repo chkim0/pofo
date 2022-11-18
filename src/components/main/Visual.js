@@ -1,7 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faMagnifyingGlassPlus, faMapPin } from '@fortawesome/free-solid-svg-icons'
-
-
 import Anime from "../../asset/Anime"
 import { useRef } from "react"
 
@@ -15,7 +13,8 @@ const path = process.env.PUBLIC_URL;
 
 export default function Visual() {
 
-  const box = useRef(null);
+const box = useRef(null);
+
 
 
   return (

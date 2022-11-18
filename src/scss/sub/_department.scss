@@ -11,38 +11,74 @@
 			content: "";
 			display: block;
 			clear: both;
-		}		
-}
-
-@media screen and (max-width: $tablet) {
-	.Department {
-		> .inner {
-			article {
-				width: 50%;
-				margin-bottom: 40px;
-				.info {
-					.pic {
-						height: 260px;
-					}
-				}
-			}
 		}
 	}
 }
 
-@media screen and (max-width: $mobile) {
+@media screen and (max-width: 1599px) {
 	.Department {
-		> .inner {
-			article {
+		.inner {
+			width: 100%;
+			margin-left: 0%;
+
+			.figbg {
 				width: 100%;
-				margin-bottom: 30px;
-				.info {
-					.pic {
-						height: 200px;
-					}
+				margin-left: 0%;
+				img {
+					width: 100%;
 				}
 			}
 		}
 	}
 }
+
+@media screen and (max-width: 1279px) {
+	.Department {
+		.inner {
+			width: 100%;
+			margin-left: 0%;
+
+			.figbg {
+				width: 100%;
+				margin-left: 0%;
+				img {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1023px) {
+	.Department {
+		.inner {
+			width: 100%;
+			margin-left: 0%;
+
+			.figbg {
+				width: 100%;
+				margin-left: 0%;
+				img {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 779px) {
+	.Department {
+		.inner {
+			width: 100%;
+			margin-left: 0%;
+
+			.figbg {
+				width: 100%;
+				margin-left: 0%;
+				img {
+					width: 100%;
+				}
+			}
+		}
+	}
 }

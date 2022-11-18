@@ -1,5 +1,6 @@
 import styled, { css } from "styled-components";
 
+
 const BoxWrap = styled.article`
 	float: left;
 	width: 20%;
@@ -127,12 +128,19 @@ const BoxWrap = styled.article`
 		&:nth-of-type(11) {width: 50%;}
 		&:nth-of-type(12) {width: 50%; display: block;}
 	}
+
 	@media screen and (max-width: ${({ theme }) => theme.mo_m}) {
-		&:nth-of-type(1) {height: 300px;}
-	}
-	@media screen and (max-width: ${({ theme }) => theme.mo_m}) {
-		display: none;
-		&:nth-of-type(1) {display: block; position: fixed; width: 100%;  height: 100%;}
+		
+		&:nth-of-type(1) {display: block;  width: 100%;}
+		&:nth-of-type(2) {width: 100%;}
+		&:nth-of-type(3) {display: none;}
+		&:nth-of-type(5) {width: 50%;}
+		&:nth-of-type(6) {width: 50%;}
+		&:nth-of-type(8) {width: 50%;}
+		&:nth-of-type(9) {width: 50%;}
+		&:nth-of-type(11) {width: 50%;}
+		&:nth-of-type(12) {width: 50%;} 
+		
 	}
 `;
 

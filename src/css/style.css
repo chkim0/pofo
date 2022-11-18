@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Bangers&family=Bowlby+One+SC&family=Grape+Nuts&family=Herr+Von+Muellerhoff&family=Notable&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat&family=Orbitron:wght@900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat&family=Orbitron:wght@900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat&family=Orbitron:wght@900&display=swap");
@@ -55,11 +56,84 @@ footer .inner {
   margin: 0px auto;
   position: relative;
 }
-footer .inner p {
+footer .inner .footernav {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  overflow: hidden;
+}
+footer .inner .footernav p {
+  align-items: center;
+  color: #444;
+  display: flex;
+  font-size: 14px;
   text-align: center;
   font: 12px/1 "arial";
   color: #eee;
   letter-spacing: 2px;
+}
+footer .inner .footernav p span {
+  align-items: center;
+  border: 1px solid #999;
+  border-radius: 20px;
+  color: #999;
+  display: flex;
+  font-family: "arial";
+  font-size: 11px;
+  font-weight: 100;
+  height: 20px;
+  justify-content: center;
+  margin-right: 10px;
+  text-transform: uppercase;
+  width: 55px;
+}
+footer .inner .footernav ul {
+  display: flex;
+}
+footer .inner .footernav ul li {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  padding: 0 5px;
+  font: 10px "arial";
+  color: #fff;
+}
+footer .inner .footernav ul li a {
+  color: #777;
+}
+footer .inner .footernav ul li::after {
+  background-color: #bbb;
+  content: "";
+  display: inline-block;
+  height: 10px;
+  margin-bottom: -1px;
+  margin-left: 10px;
+  width: 1px;
+}
+footer .inner .adress {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  position: relative;
+  margin-top: 20px;
+}
+footer .inner .adress h2 {
+  font-size: 30px;
+  font-family: "Orbitron";
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+footer .inner .adress > p {
+  color: #999;
+  font-family: "arial";
+  font-size: 11px;
+  line-height: 1.5;
+  display: flex;
+  justify-content: center;
 }
 
 @media screen and (max-width: 1179px) {
@@ -117,8 +191,8 @@ footer .inner p {
   }
   .content .inner {
     width: 100%;
-    margin: 80px auto 120px;
-    padding: 0px 40px;
+    margin: 0px auto;
+    padding: 0px 0px;
   }
 }
 header {
@@ -1088,25 +1162,59 @@ header.main .inner .menuMo {
   display: block;
   clear: both;
 }
-@media screen and (max-width: 1179px) {
-  .Department .Department > .inner article {
-    width: 50%;
-    margin-bottom: 40px;
-  }
-  .Department .Department > .inner article .info .pic {
-    height: 260px;
-  }
-}
-@media screen and (max-width: 539px) {
-  .Department .Department > .inner article {
-    width: 100%;
-    margin-bottom: 30px;
-  }
-  .Department .Department > .inner article .info .pic {
-    height: 200px;
-  }
-}
 
+@media screen and (max-width: 1599px) {
+  .Department .inner {
+    width: 100%;
+    margin-left: 0%;
+  }
+  .Department .inner .figbg {
+    width: 100%;
+    margin-left: 0%;
+  }
+  .Department .inner .figbg img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1279px) {
+  .Department .inner {
+    width: 100%;
+    margin-left: 0%;
+  }
+  .Department .inner .figbg {
+    width: 100%;
+    margin-left: 0%;
+  }
+  .Department .inner .figbg img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .Department .inner {
+    width: 100%;
+    margin-left: 0%;
+  }
+  .Department .inner .figbg {
+    width: 100%;
+    margin-left: 0%;
+  }
+  .Department .inner .figbg img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 779px) {
+  .Department .inner {
+    width: 100%;
+    margin-left: 0%;
+  }
+  .Department .inner .figbg {
+    width: 100%;
+    margin-left: 0%;
+  }
+  .Department .inner .figbg img {
+    width: 100%;
+  }
+}
 .Gallery {
   background: linear-gradient(45deg, #222, #000);
 }
@@ -1232,55 +1340,201 @@ header.main .inner .menuMo {
 .Location figure {
   background: lightblue;
 }
-.Location #map {
-  width: 100%;
+.Location .locationsec {
+  align-content: stretch;
+  display: flex;
+  height: 500px;
+  justify-content: space-between;
+}
+.Location .locationsec #map {
+  width: 70%;
   height: 500px;
   background: #000;
 }
-.Location .locationsec {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-}
 .Location .locationsec .btnSet {
+  width: 30%;
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
   justify-content: space-between;
-  margin-top: 50px;
 }
 .Location .locationsec .btnSet button {
   cursor: pointer;
-  height: 30px;
-  border: 1px solid #888;
+  border: 1px solid #fff;
   padding: 5px 20px;
   font: 12px/1 "Orbitron";
+  width: 100%;
+  height: 100%;
 }
 .Location .locationsec .btnSet ul {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 .Location .locationsec .btnSet ul li {
-  font: 12px/1 "Orbitron";
-  border: 1px solid #888;
-  height: 30px;
-  padding: 0px 20px;
-  line-height: 30px;
-  font-size: 12px;
+  display: block;
   cursor: pointer;
-  margin-left: 10px;
-  transition: 0.5s;
-  background: #eee;
+  margin-right: 5px;
+  padding: 20px 10px;
+  transition: padding 0.5s;
+  height: 100px;
+}
+.Location .locationsec .btnSet ul li h2 {
+  font: 20px/1 "Orbitron";
+  color: #fff;
+  text-shadow: 0 1px 1px #fff;
+}
+.Location .locationsec .btnSet ul li > p {
+  margin-top: 20px;
+  font: 9px/1 "arial";
+  color: #666;
+  text-align: right;
+  margin-right: 20px;
 }
 .Location .locationsec .btnSet ul li.on {
-  background: #888;
-  border: 1px solid #333;
+  background-color: #fff;
+  border-radius: 10px;
+  border-top: 0;
+  padding: 20px 20px;
+}
+.Location .locationsec .btnSet ul li.on h2 {
+  font: 20px/1 "Orbitron";
+  color: #000;
+  text-shadow: 0 1px 1px #fff;
+}
+.Location .locationsec .btnSet ul li.on > p {
+  margin-top: 20px;
+  font: 9px/1 "arial";
   color: #000;
 }
 
+@media screen and (max-width: 1179px) {
+  .Location .inner {
+    width: 100%;
+    margin: 0px auto;
+    padding: 0px 0px;
+  }
+  .Location .inner .locationsec {
+    align-content: space-between;
+    display: flex;
+    height: 650px;
+    justify-content: center;
+    flex-direction: column;
+    /* flex-wrap: nowrap; */
+    align-items: center;
+  }
+  .Location .inner .locationsec .btnSet {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    flex-direction: row;
+    align-content: flex-start;
+  }
+  .Location .inner .locationsec .btnSet .branch {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .Location .inner .locationsec .btnSet .branch li {
+    width: 20%;
+  }
+  .Location .inner .locationsec .btnSet .branch li h2 {
+    font: 12px/1 "orbitron";
+    color: #fff;
+  }
+  .Location .inner .locationsec .btnSet .branch li p {
+    font: 3px "arial";
+    text-align: center;
+    padding: 0px 10px;
+  }
+  .Location .inner .locationsec .btnSet .branch li.on {
+    background-color: #fff;
+    border-radius: 10px;
+    border-top: 0;
+    padding: 20px 20px;
+  }
+  .Location .inner .locationsec .btnSet .branch li.on h2 {
+    font: 12px/1 "Orbitron";
+    color: #000;
+    margin-bottom: 20px;
+  }
+  .Location .inner .locationsec .btnSet .branch li.on > p {
+    margin-top: 10px;
+    font: 3px/1 "arial";
+    color: #000;
+    text-align: center;
+    padding: 1px 10px;
+    transition: 0.3s;
+  }
+  .Location .inner .locationsec #map {
+    width: 100%;
+    height: 500px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .Location .inner {
+    width: 100%;
+    margin: 0px auto;
+    padding: 0px 0px;
+  }
+  .Location .inner .locationsec {
+    align-content: space-between;
+    display: flex;
+    height: 650px;
+    justify-content: center;
+    flex-direction: column;
+    /* flex-wrap: nowrap; */
+    align-items: center;
+  }
+  .Location .inner .locationsec .btnSet {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    flex-direction: row;
+    align-content: flex-start;
+  }
+  .Location .inner .locationsec .btnSet .branch {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .Location .inner .locationsec .btnSet .branch li {
+    width: 20%;
+  }
+  .Location .inner .locationsec .btnSet .branch li h2 {
+    margin-top: 13px;
+    font: 12px/1 "orbitron";
+    color: #fff;
+    text-align: center;
+  }
+  .Location .inner .locationsec .btnSet .branch li > p {
+    display: none;
+  }
+  .Location .inner .locationsec .btnSet .branch li.on {
+    background-color: #fff;
+    border-radius: 10px;
+    border-top: 0;
+    padding: 20px 10px;
+  }
+  .Location .inner .locationsec .btnSet .branch li.on h2 {
+    font: 12px/1 "Orbitron";
+    color: #000;
+  }
+  .Location .inner .locationsec .btnSet .branch li.on > p {
+    display: none;
+  }
+  .Location .inner .locationsec #map {
+    width: 100%;
+    height: 500px;
+  }
+}
 .Member {
   background: linear-gradient(45deg, #222, #000);
 }
@@ -1425,6 +1679,20 @@ header.main .inner .menuMo {
     height: 120px;
     margin-bottom: 0px;
   }
+}
+.cursor {
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  position: fixed;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: transform 0.3s;
+  mix-blend-mode: difference;
 }
 
 /*# sourceMappingURL=style.css.map */

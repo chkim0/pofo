@@ -17,9 +17,9 @@ const bgs = [
 ]
 
 const SectionWrap = styled.section`
-	width: 85%;
+	width: 100%;
 	position: relative;
-	margin-left: 10%;
+	
     .sectxt{
             display:block;
             width:100%;
@@ -32,10 +32,66 @@ const SectionWrap = styled.section`
             }
 
         }
+        
 	@media screen and (max-width: ${({ theme }) => theme.web_b} ) {		
 		width: 100%;	
 		margin-left: 0%;
+     
+        .figbg{
+            width: 100%;   
+            margin-left: 0%;
+            img{
+                 width: 100%;   
+            }
+         }
+     }
         
+	}
+    @media screen and (max-width: ${({ theme }) => theme.web_s} ) {		
+		width: 100%;	
+		margin-left: 0%;
+      
+       .figbg{
+            width: 100%;   
+            margin-left: 0%;
+            img{
+                 width: 100%;   
+            }
+         }
+     }
+	}
+    	@media screen and (max-width: ${({ theme }) => theme.mo_b}) {
+		width: 100%;	
+		margin-left: 0%;
+      
+        .figbg{
+            width: 100%;   
+            margin-left: 0%;
+            img{
+                 width: 100%;   
+            }
+         }
+     }
+	}
+	@media screen and (max-width: ${({ theme }) => theme.mo_m}) {
+		
+        width: 100%;	
+		margin-left: 0%;
+       bg{
+        width: 100%;
+        height: 0%;
+       }
+        .figbg{
+            width: 100%;   
+            margin-left: 0%;
+            img{
+                 width: 100%;   
+            }
+         }
+         
+     }
+		&:nth-of-type(1) {display: block; width: 100%;}
+        &:nth-of-type(11) {display: none;}
 	}
 `;
 
@@ -44,7 +100,7 @@ function Section() {
     return (
         <SectionWrap>
 
-            <figure className="bg">
+            <figure className="figbg">
                 <img src={process.env.PUBLIC_URL + '/img/deparsub.jpg'} />
             </figure>
 
@@ -134,7 +190,10 @@ function Section() {
                 <div>
                     <span>Julia</span>
                 </div>
+
             </Box>
+
+
 
         </SectionWrap>
     );
