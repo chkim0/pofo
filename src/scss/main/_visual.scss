@@ -41,20 +41,20 @@
 			position: absolute;
 			top: 20%;
 			left: 20%;
-			font: bold 70px/1 "Orbitron";
+			font: bold 70px/1.2 "Itim";
 			color: #fff;
 			z-index: 7;
 			&::after {
 				position: absolute;
 				content: "";
 				display: block;
-				width: 450px;
+				width: 45%;
 				height: 2px;
 				background: #fff;
 				margin-top: 10px;
 				z-index: 15;
-				top: 98px;
-				left: 380px;
+				top: 65%;
+				left: 65%;
 			}
 		}
 
@@ -159,6 +159,23 @@
 			.vpic {
 				left: 0;
 				width: 100%;
+				> p {
+				}
+				h1 {
+					font-size: 40px;
+					&::after {
+						position: absolute;
+						content: "";
+						display: block;
+						width: 45%;
+						height: 2px;
+						background: #fff;
+						margin-top: 10px;
+						z-index: 15;
+						top: 65%;
+						left: 38%;
+					}
+				}
 			}
 			.since {
 				top: 18%;
@@ -197,6 +214,23 @@
 			.vpic {
 				left: 0;
 				width: 100%;
+				p {
+					&::after {
+						position: absolute;
+						content: "";
+						display: block;
+						width: 45%;
+						height: 2px;
+						background: #fff;
+						margin-top: 10px;
+						z-index: 15;
+						top: 65%;
+						left: 38%;
+					}
+				}
+				h1 {
+					font-size: 20px;
+				}
 			}
 			.since {
 				top: 18%;

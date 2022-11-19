@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Bangers&family=Bowlby+One+SC&family=Grape+Nuts&family=Herr+Von+Muellerhoff&family=Notable&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Changa:wght@200&family=Indie+Flower&family=Poiret+One&family=Rubik+Distressed&family=Special+Elite&display=swap");
 $tablet: 1179px;
 $mobile: 539px;
 $web_m: 1179px;
@@ -27,11 +28,17 @@ $mo_s: 339px;
 @import "sub/member";
 @import "sub/youtube";
 
-
 .cursor {
-    width: 20px; height: 20px; background: #fff;
-    position: fixed; border-radius: 50%; top: 0; left: 0; z-index: 2;
-    pointer-events: none; transform: translate(-50%, -50%);
-    transition: transform 0.3s;
-    mix-blend-mode:difference;
-  }
+	width: 20px;
+	height: 20px;
+	background: #fff;
+	position: fixed;
+	border-radius: 50%;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	pointer-events: none;
+	transform: translate(-50%, -50%);
+	transition: transform 0.3s;
+	mix-blend-mode: difference;
+}

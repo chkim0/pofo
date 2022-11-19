@@ -13,7 +13,7 @@ const path = process.env.PUBLIC_URL;
 
 export default function Visual() {
 
-const box = useRef(null);
+  const box = useRef(null);
 
 
 

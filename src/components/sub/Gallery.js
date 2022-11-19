@@ -91,6 +91,7 @@ export default function Gallery() {
             src={`${process.env.PUBLIC_URL}/img/loading.gif`}
           />
         )}
+        <p className="subtext">The second part of that message  spelled out in speech announcing partial mobilization  <br></br>is that any attack on what is considered invites the full range of retaliation.</p>
 
         <div className="controls">
           <nav>

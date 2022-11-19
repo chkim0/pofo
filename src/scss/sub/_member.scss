@@ -1,17 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Orbitron:wght@900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Orbitron:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Changa:wght@200&family=Indie+Flower&family=Itim&family=Poiret+One&family=Rubik+Distressed&family=Special+Elite&display=swap");
 .Member {
 	background: linear-gradient(45deg, #222, #000);
 	figure {
 		background: lightgreen;
 	}
+
 	> .inner {
+		.subtext {
+			display: block;
+			width: 100%;
+			font-size: 20px;
+			font-weight: 300;
+			font-family: "Itim";
+			line-height: 30px;
+			color: #fff;
+			margin: 15px 0 0 10px;
+			padding: 0 0 50px 20px;
+		}
 		table {
 			width: 100%;
 			border: none;
 			border-top: 2px solid #333;
 			border-bottom: 1px solid #333;
 			font: bold 15px/1 "Orbitron";
-			color:#fff;
+			color: #fff;
 
 			th {
 				width: 20%;
@@ -35,7 +48,6 @@
 					margin: 0px 10px;
 					cursor: pointer;
 					font: bold 20px/1 "Orbitron";
-
 				}
 			}
 			td {
@@ -61,9 +73,8 @@
 				label {
 					margin-right: 8px;
 					margin-left: 5px;
-					font: bold 15px/1 "Orbitron";color: #fff;
-
-					
+					font: bold 15px/1 "Orbitron";
+					color: #fff;
 				}
 				input[type="radio"] {
 					margin-right: 20px;

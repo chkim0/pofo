@@ -6,9 +6,9 @@ export default function Community() {
 
     const getLocalData = () => {
         const dummyPosts = [
-            { title: 'Can young children be dangerous psychopaths?', content: 'Her mother passed away when she was just over a year old, her father abused her and her brother. She was given up for adoption and soon began to demonstrate psychopathic behavior. She killed animals like cats and birds, pinched and hurt her younger brother. She said that she wanted to stick pins in her and that she wanted to stick a knife in her adoptive father while she slept.' },
+            { title: 'Can young children be dangerous psychopaths?', content: 'Her mother passed away when she was just over a year old, her father abused her and her brother. She was given up for adoption and soon began to demonstrate psychopathic behavior. She killed animals like cats and birds, pinched and hurt her younger brother.' },
             { title: 'What is it like to type extremely quickly?', content: 'It earned me a wife. She was an undergraduate, and I was a graduate student, and I offered to type all her term papers for her. I dont think anything I did earned more love and appreciation.' },
-            { title: "Are H.P. Lovecraft’s stories actually scary or has he been overhyped?", content: "No disrespect to the other people who’ve answered this question, but they haven’t quite hit the mark. The answer is simple. Lovecraft’s stories are indeed very scary. But they’re scary in a different way than most of the stuff you’ve probably read.Because they were written for an entirely different"},
+            { title: "Are H.P. Lovecraft’s stories actually scary or has he been overhyped?", content: "No disrespect to the other people who’ve answered this question, but they haven’t quite hit the mark. The answer is simple. Lovecraft’s stories are indeed very scary. But they’re scary in a different way than most of the stuff you’ve probably read.Because they were written for an entirely different" },
             { title: 'What are the books that were left out of the Bible, but added later on as apocrypha?', content: 'You cant expect so much from us, we are trying but being a teenager is really hard. Im sorry we arent always able to please you.' },
             { title: 'What fictional weapon are you glad is not real, and why?', content: 'The Speaking Gun is not even a gun at all, but a contraption of flesh, bone, and cartilage made to look like a gun and infused with both the power of Lilith and the ancient words that God used at the beginning of time to create the universe, "Let there be Light."' },
 
@@ -147,10 +147,19 @@ export default function Community() {
 
     return (
         <Layout name={"Community"}>
+            <p className="subtext">"All at once everything looks
+
+                different, now that I see you"
+
+                "Some people are worth
+                <br></br>
+                melting for The very things that hold you down
+
+                are going to lift you up"</p>
             <div className="inputBox">
-                <input type="text" placeholder="제목을 입력하세요" ref={input} />
+                <input type="text" placeholder="Please enter a title " ref={input} />
                 <br />
-                <textarea cols="30" rows="5" placeholder="본문을 입력하세요" ref={textarea}></textarea>
+                <textarea cols="30" rows="5" placeholder="Please enter a text" ref={textarea}></textarea>
                 <br />
                 <div className="btnSet">
                     <button onClick={resetForm}>CANCEL</button>

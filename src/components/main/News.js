@@ -143,7 +143,7 @@ function News() {
                     /*날짜넣기*/
                     return (
 
-                        <article key={idx}>
+                        <article className="post_aritcle" key={idx}>
 
                             <h3>{post.title}</h3>
                             <p>{post.content}</p>

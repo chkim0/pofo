@@ -20,21 +20,25 @@ export default function Youtube() {
 					const date = data.snippet.publishedAt;
 
 					return (
-						<article key={index}>
-							<h3>{tit.length > 30 ? tit.substr(0, 30) + '...' : tit}</h3>
-							<div className="txt">
-								<p>{desc.length > 100 ? desc.substr(0, 100) : desc}</p>
-								<span>{date.split('T')[0]}</span>
-							</div>
-							<div className="pic" onClick={() => {
-								pop.current.open();
-								setIndex(index)
-							}}>
-								<img
-									src={data.snippet.thumbnails.standard.url}
-									alt={data.snippet.title} />
-							</div>
-						</article>
+						<>
+							<p className="subtext">"Baunov at the Carnegie Endowment put it last week, the message from the Kremlin to  allies is this <br></br>You chose to fight us in Ukraine, now try to fight us The second part of that message"</p>
+
+							<article key={index}>
+								<h3>{tit.length > 30 ? tit.substr(0, 30) + '...' : tit}</h3>
+								<div className="txt">
+									<p>{desc.length > 100 ? desc.substr(0, 100) : desc}</p>
+									<span>{date.split('T')[0]}</span>
+								</div>
+								<div className="pic" onClick={() => {
+									pop.current.open();
+									setIndex(index)
+								}}>
+									<img
+										src={data.snippet.thumbnails.standard.url}
+										alt={data.snippet.title} />
+								</div>
+							</article>
+						</>
 					);
 				})}
 			</Layout>

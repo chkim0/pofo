@@ -32,7 +32,7 @@
 			h1 {
 				display: block;
 				width: 100%;
-				font: normal 30px/1 "Orbitron";
+				font: normal 30px/1.1 "Rubik Distressed";
 				text-align: center;
 				margin-bottom: 20px;
 				z-index: 3;
@@ -101,7 +101,7 @@
 				text-align: center;
 				padding-top: 10px;
 				top: -4%;
-				left: 72px;
+				left: 7%;
 			}
 			.newsbox {
 				width: 800px;
@@ -124,6 +124,59 @@
 			@for $i from 1 to 6 {
 				&:nth-of-type(#{$i}) {
 					transition-delay: 0.2s * $i;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $tablet) {
+	#news {
+		.inner {
+			width: 100%;
+
+			.newsheader {
+				span {
+				}
+				h1 {
+				}
+			}
+			.post_aritcle {
+				width: 50%;
+				&:nth-of-type(3) {
+					display: none;
+				}
+			}
+			.newssec {
+				.newsbox {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $mobile) {
+	#news {
+		.inner {
+			.newsheader {
+				span {
+				}
+				h1 {
+				}
+			}
+			.post_aritcle {
+				width: 100%;
+				&:nth-of-type(2) {
+					display: none;
+				}
+				&:nth-of-type(3) {
+					display: none;
+				}
+			}
+			.newssec {
+				.newsbox {
+					width: 100%;
 				}
 			}
 		}

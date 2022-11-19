@@ -1,13 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Orbitron:wght@900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Orbitron:wght@900&display=swap");
 
-.Gallery {background: linear-gradient(45deg, #222, #000);
-	
+.Gallery {
+	background: linear-gradient(45deg, #222, #000);
+
 	.loading {
 		position: absolute;
 		top: 0;
 		left: 50%;
 		transform: translateX(-50%);
 		z-index: 0;
+	}
+	.subtext {
+		display: block;
+		width: 100%;
+		font-size: 20px;
+		font-weight: 300;
+		font-family: "Itim";
+		line-height: 30px;
+		color: #fff;
+		margin: 15px 0 0 10px;
+		padding: 0 0 50px 20px;
 	}
 	.controls {
 		display: flex;
@@ -114,13 +126,16 @@
 }
 
 @media screen and (max-width: $tablet) {
-	section .frame article {
+	.inner .frame article {
 		width: 33.3333%;
 	}
 }
 
 @media screen and (max-width: $mobile) {
-	section .frame article {
+	.inner .frame article {
 		width: 100%;
+	}
+	.inner .controls {
+		display: flex;
 	}
 }

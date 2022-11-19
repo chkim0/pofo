@@ -126,7 +126,10 @@ function Member() {
   return (
     <Layout name={'Member'}>
       {/* 순서 5 전송버튼 클릭시 핸들서브밋함수를 호출 */}
+
       <form onSubmit={handleSubmit}>
+        <p className="subtext">"While the international community will reject plan almost in unison
+          <br></br>have categorically rejected the planned annexation of the four regions"</p>
         <fieldset>
           <legend className='h'>회원가입 폼 양식</legend>
           <table border='1'>

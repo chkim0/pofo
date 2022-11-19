@@ -19,7 +19,18 @@ const bgs = [
 const SectionWrap = styled.section`
 	width: 100%;
 	position: relative;
-	
+	.subtext{
+        display:block;
+        width:100%;
+        heigth: 180px;
+        font-size: 20px;
+    font-weight: 300;
+   font-family: 'Itim';
+    line-height: 30px;
+    color:#fff;
+         margin: 15px 0 0 10px;
+    padding: 0 0 50px 20px;
+    }
     .sectxt{
             display:block;
             width:100%;
@@ -99,6 +110,14 @@ const SectionWrap = styled.section`
 function Section() {
     return (
         <SectionWrap>
+            <p className="subtext">"Remember you're the one
+
+                who can fill the world with
+
+                sunshine,<br></br>
+                The very things that hold you down
+
+                are going to lift you up"</p>
 
             <figure className="figbg">
                 <img src={process.env.PUBLIC_URL + '/img/deparsub.jpg'} />

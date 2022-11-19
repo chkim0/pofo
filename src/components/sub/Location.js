@@ -120,6 +120,8 @@ export default function Location() {
     return (
         <Layout name={"Location"}>
             <div className="inner">
+                <p className="subtext">"Donetsk and Luhansk are home to two that Moscow has backed since 2014,
+                    <br></br>while Kherson and parts of  have been controlled by since shortly after the invasion began in late February."</p>
                 <div className="locationsec">
                     <div className="btnSet">
                         {/* <button onClick={() => { setTraffic(!Traffic) }

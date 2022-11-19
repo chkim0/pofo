@@ -55,6 +55,7 @@ function Vids() {
 												pop.current.open();
 												setIndex(idx);
 												sw.current.swiper.autoplay.stop();
+
 											}}>
 												<img src={vid.snippet.thumbnails.standard.url} />
 											</div>
