@@ -30,9 +30,9 @@ function Pics({ Scrolled, start }) {
 
               <li key={pic.id}>
                 <figure className="bg">
-                  <img src={process.env.PUBLIC_URL + '/img/pngg.png'} className="picbg" />
-                  <img src={`https://live.staticflickr.com/${pic.server}/${pic.id}_${pic.secret}_m.jpg`} className='picp' />
-
+                  <div className="picbg">
+                    <img src={`https://live.staticflickr.com/${pic.server}/${pic.id}_${pic.secret}_m.jpg`} className='picp' />
+                  </div>
                 </figure>
 
 

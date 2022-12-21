@@ -88,7 +88,7 @@ export default function Gallery() {
         {Loading && (
           <img
             className="loading"
-            src={`${process.env.PUBLIC_URL}/img/loading.gif`}
+            src={`${process.env.PUBLIC_URL}/img/loading1.gif`}
           />
         )}
         <p className="subtext">The second part of that message  spelled out in speech announcing partial mobilization  <br></br>is that any attack on what is considered invites the full range of retaliation.</p>
